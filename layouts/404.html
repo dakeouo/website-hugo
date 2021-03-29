@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+
+<div class="header">
+  <h1>{{ .Title }}</h1>
+  <h2>{{ .Site.Params.subtitle }}</h2>
+</div>
+
+<div class="content">
+  <h3>404 Not Found.</h3>
+
+  {{ partial "pagination.html" . }}
+
+</div>
+
+{{ partial "footer.html" . }}

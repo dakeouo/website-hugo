@@ -1,3 +1,77 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "zh-tw"
+# language code
+languageCode = "zh-tw"
+title = "Terahake"
+copyright = "&copy; L.J. Hong | Terahake. All rights reserved."
+canonifyurls = true
+paginate = 5
+
+# Change the default theme to be use when building the site with Hugo
+theme = "blackburn"
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
+  category = "category"
+
+[params]
+  # Shown in the home page
+  subtitle = "A novice engineer who is still self-exploring"
+  brand = "Terahake"
+  googleAnalytics = "Your Google Analytics tracking ID"
+  disqus = "terahake"
+  # CSS name for highlight.js
+  highlightjs = "androidstudio"
+  highlightjs_extra_languages = ["yaml"]
+  dateFormat = "2006-01-02 15:04"
+  # Include any custom CSS and/or JS files
+  # (relative to /static folder)
+  custom_css = ["css/my.css"]
+  custom_icon = ["img/favicon.ico"]
+  custom_js = ["js/my.js"]
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Posts"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 2
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "Tags"
+    pre = "<i class='fa fa-tags fa-fw'></i>"
+    weight = 3
+    identifier = "tags"
+    url = "/tags/"
+  [[menu.main]]
+    name = "Category"
+    pre = "<i class='fa fa-folder fa-fw'></i>"
+    weight = 4
+    identifier = "category"
+    url = "/category/"
+  [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 5
+    identifier = "about"
+    url = "/about/"
+
+[taxonomies]
+  category = "category"
+
+[social]
+  # Link your social networking accounts to the side menu
+  # by entering your username or ID.
+
+  linkedin = "dake-hong-a59044104"
+  github = "dakeouo"
+  email = "dake852@gmail.com"

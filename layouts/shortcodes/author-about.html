@@ -1,0 +1,106 @@
+<style type="text/css">
+	body{
+		font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+	}
+	#author_img{
+		margin: 0.5em auto;
+		min-width: 150px;
+		min-height: 150px;
+		width: 15vw;
+		height: 15vw;
+		max-width: 200px;
+		max-height: 200px;
+		border-radius: 20px;
+	}
+	a.media_icon:hover {
+		background-color: white;
+	}
+	a.media_icon:hover i{
+		color: #ff881a;
+	}
+</style>
+<div class="pure-g">
+	<div class="pure-u-1 pure-u-md-1-4 pure-u-lg-1-3" style="text-align: center;">
+		<img class="author-img" src="{{ .Site.BaseURL }}img/author.png" id="author_img" />
+	</div>
+	<div class="pure-u-1 pure-u-md-3-4 pure-u-lg-2-3" style="margin-top: -0.5em;">
+		<h1 style="font-size: 1.8em; color:#444; margin-left: 0.5em;">{{ .Get `author-name` }}</h1>
+		<h3 style="font-size: 1em; color:#777; margin-left: 1em;">{{ .Get `self-info` }}</h3>
+		<div class="pure-u-1" style="margin-left: 0.5em; margin-top: -0.5em;">
+			
+			{{ with .Site.Social.twitter }}
+		    <div class="pure-u-1-5 pure-u-lg-1-8" style="text-align: center; margin-left: -0.5em;">
+		      <a class="pure-menu-link media_icon" href="https://twitter.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+		    </div>
+		    {{ end }}
+
+		    {{ with .Site.Social.facebook }}
+		    <div class="pure-u-1-5 pure-u-lg-1-8" style="text-align: center; margin-left: -0.5em;">
+		      <a class="pure-menu-link media_icon" href="https://facebook.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+		    </div>
+		    {{ end }}
+
+		    {{ with .Site.Social.tumblr }}
+		    <div class="pure-u-1-5 pure-u-lg-1-8" style="text-align: center; margin-left: -0.5em;">
+		      <a class="pure-menu-link media_icon" href="https://{{ . }}.tumblr.com/" rel="me" target="_blank"><i class="fab fa-tumblr-square fa-2x"></i></a>
+		    </div>
+		    {{ end }}
+
+		    {{ with .Site.Social.instagram }}
+		    <div class="pure-u-1-5 pure-u-lg-1-8" style="text-align: center; margin-left: -0.5em;">
+		      <a class="pure-menu-link media_icon" href="https://instagram.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+		    </div>
+		    {{ end }}
+
+		    {{ with .Site.Social.flickr }}
+		    <div class="pure-u-1-5 pure-u-lg-1-8" style="text-align: center; margin-left: -0.5em;">
+		      <a class="pure-menu-link media_icon" href="https://flickr.com/photos/{{ . }}" rel="me" target="_blank"><i class="fab fa-flickr fa-2x"></i></a>
+		   	</div>
+		    {{ end }}
+
+		    {{ with .Site.Social.slideshare }}
+		    <div class="pure-u-1-5 pure-u-lg-1-8" style="text-align: center; margin-left: -0.5em;">
+		      <a class="pure-menu-link media_icon" href="http://slideshare.net/{{ . }}" rel="me" target="_blank"><i class="fab fa-slideshare fa-2x"></i></a>
+		    </div>
+		    {{ end }}
+
+		    {{ with .Site.Social.linkedin }}
+		    <div class="pure-u-1-5 pure-u-lg-1-8" style="text-align: center; margin-left: -0.5em;">
+		      <a class="pure-menu-link media_icon" href="https://linkedin.com/in/{{ . }}" rel="me" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+		    </div>
+		    {{ end }}
+
+		    {{ with .Site.Social.github }}
+		    <div class="pure-u-1-5 pure-u-lg-1-8" style="text-align: center; margin-left: -0.5em;">
+		      <a class="pure-menu-link media_icon" href="https://github.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+		    </div>
+		    {{ end }}
+
+		    {{ with .Site.Social.gitlab }}
+		    <div class="pure-u-1-5 pure-u-lg-1-8" style="text-align: center; margin-left: -0.5em;">
+		      <a class="pure-menu-link media_icon" href="https://gitlab.com/{{ . }}" rel="me" target="_blank"><i class="fab fa-gitlab fa-2x"></i></a>
+		    </div>
+		    {{ end }}
+
+		    {{ with .Site.Social.bitbucket }}
+		    <div class="pure-u-1-5 pure-u-lg-1-8" style="text-align: center; margin-left: -0.5em;">
+		      <a class="pure-menu-link media_icon" href="https://bitbucket.org/{{ . }}" rel="me" target="_blank"><i class="fab fa-bitbucket fa-2x"></i></a>
+		    </div>
+		    {{ end }}
+
+		    {{ with .Site.Social.stackoverflow }}
+		    <div class="pure-u-1-5 pure-u-lg-1-8" style="text-align: center; margin-left: -0.5em;">
+		      <a class="pure-menu-link media_icon" href="https://stackoverflow.com/users/{{ . }}" rel="me" target="_blank"><i class="fab fa-stack-overflow fa-2x"></i></a>
+		    </div>
+		    {{ end }}
+
+			{{ with .Site.Social.email }}
+			<div class="pure-u-1-5 pure-u-lg-1-8" style="text-align: center; margin-left: -0.5em;">
+	 			<a class="pure-menu-link media_icon" href="mailto:{{ . }}" rel="me" target="_blank"><i class="fas fa-envelope-square fa-2x"></i></a>
+	 		</div>
+    		{{ end }}
+
+		</div>
+	</div>
+	 
+</div>

@@ -59,7 +59,7 @@ theme = "blackburn"
     identifier = "category"
     url = "/category/"
   [[menu.main]]
-    name = "About"
+    name = "About Me"
     pre = "<i class='fa fa-user fa-fw'></i>"
     weight = 5
     identifier = "about"

@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://terahake.netlify.app/"
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "zh-tw"
 # language code

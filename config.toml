@@ -20,7 +20,7 @@ theme = "blackburn"
   # Shown in the home page
   subtitle = "A novice engineer who is still self-exploring"
   brand = "Terahake"
-  googleAnalytics = "Your Google Analytics tracking ID"
+  googleAnalytics = "G-BD3C5TX2NY"
   disqus = "terahake"
   # CSS name for highlight.js
   highlightjs = "androidstudio"

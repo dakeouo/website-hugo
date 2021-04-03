@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MTA on Terahake</title>
+    <link>https://terahake.netlify.app/tags/mta/</link>
+    <description>Recent content in MTA on Terahake</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>&amp;copy; L.J. Hong | Terahake. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 06 Oct 2019 14:21:12 +0800</lastBuildDate><atom:link href="https://terahake.netlify.app/tags/mta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>微軟MTA證照心得分享</title>
+      <link>https://terahake.netlify.app/post/microsoft-mta-certified-exp/</link>
+      <pubDate>Sun, 06 Oct 2019 14:21:12 +0800</pubDate>
+      
+      <guid>https://terahake.netlify.app/post/microsoft-mta-certified-exp/</guid>
+      <description>&lt;p&gt;在大二寒假前，教授問我是否想考張證照，辦一場考場，然後和實驗室想考證照的人一起考一考。我想說畢竟「專業證照」也是學校的畢業門檻之一，所以我就去考了。記得當初一張MTA證照其實不是很貴，報名費+題庫的費用共1000元，然後因為一次要考三張，才能通過學校的畢業門檻，所以花了3000元，之後就開始準備考照囉~~&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

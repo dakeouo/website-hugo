@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.82.0" />
+
+  <title>NVIDIA JETPACK TX2刷機 &middot; Terahake</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://terahake.netlify.app/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://terahake.netlify.app/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://terahake.netlify.app/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" type="text/css">
+
+  
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/androidstudio.min.css">
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+  
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://terahake.netlify.app/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="https://terahake.netlify.app/css/my.css">
+    
+  
+  
+    
+        <script src="https://terahake.netlify.app/js/my.js"></script>
+    
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://terahake.netlify.app/">Terahake</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://terahake.netlify.app/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://terahake.netlify.app/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://terahake.netlify.app/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://terahake.netlify.app/category/"><i class='fa fa-folder fa-fw'></i>Category</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://terahake.netlify.app/about/"><i class='fa fa-user fa-fw'></i>About Me</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/dake-hong-a59044104" rel="me" target="_blank"><i class="fab fa-linkedin fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/dakeouo" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="mailto:dake852@gmail.com" rel="me" target="_blank"><i class="fas fa-envelope-square fa-fw"></i>E-mail</a>
+    </li>
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; L.J. Hong | Terahake. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>NVIDIA JETPACK TX2刷機</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2020-04-03 17:35</time>
+  </div>
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://terahake.netlify.app/tags/nvidia">NVIDIA</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://terahake.netlify.app/tags/jetpack-tx2">JETPACK TX2</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <h2 id="事前硬體準備">事前硬體準備</h2>
+<ul>
+<li>一台裝有 <strong><label class="colorfulText" style="color:rgb(0, 100, 0);font-size:em;text-decoration:;">Linux Ubuntu 64位元(本文使用16.04版)</label>
+</strong> 實體機：建議不要用VM的Ubuntu，不然在執行當中可能會有錯誤</li>
+<li>一條MicroUSB轉USA Type-A的傳輸線(TX2原廠配備有提供)</li>
+<li>一台網路交換器 + 2條網路線：之後須將實體機與TX2設置在同個區網下。若無交換器，可使用 <strong><label class="colorfulText" style="color:rgb();font-size:em;text-decoration:underline;">跳線(非一般網路線)</label>
+</strong> 代替</li>
+</ul>
+<h2 id="刷機步驟">刷機步驟</h2>
+<p>TX2的刷機，其實就是一般電腦重灌系統的意思。因本身TX2出場時已自帶Ubuntu16.04 64位元作業系統，故我們要更新它的韌體的話就叫做刷機。</p>
+<h3 id="1-首先我們先到nvidia官網上面下載jetpack33httpsdevelopernvidiacomembeddeddownloadssearchjetpack2033">1. 首先，我們先到Nvidia官網上面下載<a href="https://developer.nvidia.com/embedded/downloads#?search=Jetpack%203.3">JetPack3.3</a>。</h3>
+<p>在下載時，需先<label class="colorfulText" style="color:rgb(0, 100, 0);font-size:em;text-decoration:;">註冊/登入Nvidia會員</label>
+，才可以進行下載。
+<a href="https://i.imgur.com/smU5VlC.jpg"><img src="https://i.imgur.com/smU5VlC.gif" style="margin: 0px auto; display: block;" width="90%"></a></p>
+<h3 id="2-等待下載完成後我們會取得到一個-run-檔將它放置於-ubuntu的主機-中">2. 等待下載完成後，我們會取得到一個 <em>.run</em> 檔，將它放置於 <em>Ubuntu的主機</em> 中。</h3>
+<p>建議在家目錄下建立一個Jetpack資料夾，因為在Jetpack 安裝的途中 <strong>需要一個乾淨的資料夾</strong> 。並將.run移至該資料下<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+&ndash; 建立資料夾：<code>$ mkdir /home/(使用者名稱)/Jetpack&gt;</code><label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+&ndash; 移動檔案：<code>$ mv ./(檔案名稱).run /home/(使用者名稱)/Jetpack/(檔案名稱).run </code></p>
+<h3 id="3-更改下載的run文件權限">3. 更改下載的.run文件權限。</h3>
+<p>將<label class="colorfulText" style="color:rgb(0, 100, 0);font-size:em;text-decoration:;">&#39;允許此檔案作為程式來執行&#39;</label>
+勾選起來
+<a href="https://i.imgur.com/LAPatEX.jpg"><img src="https://i.imgur.com/LAPatEX.gif" style="margin: 0px auto; display: block;" width="50%"></a></p>
+<h3 id="4-執行安裝檔需先切換到jetpack目錄">4. 執行安裝檔(需先切換到Jetpack目錄)</h3>
+<p>命令：<code>$ ./JetPack-L4T-3.3-linux-x64_b39.run </code><label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+記得前面不需要加sudo(以super user執行)，否則會有以下訊息：<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+(中譯：請使用非升級用戶運行JetPack。如果在安裝的過程中需要root權限，我們會提示您)<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/reTlTRw.jpg"><img src="https://i.imgur.com/reTlTRw.gif" style="margin: 0px auto; display: block;" width="90%"></a>
+再來你會看到一則警告訊息：<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+(中譯：我們注意到你運行於非英語語系的作業系統。NVIDIA並不測試且不支援這種配置)<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/EX9hSkn.jpg"><img src="https://i.imgur.com/EX9hSkn.gif" style="margin: 0px auto; display: block;" width="90%"></a>
+再來你會看到以下安裝畫面，如下圖所示：<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/8uuHbpv.jpg"><img src="https://i.imgur.com/8uuHbpv.gif" style="margin: 0px auto; display: block;" width="70%"></a></p>
+<h3 id="5-安裝過程">5. 安裝過程</h3>
+<p><label class="colorfulText" style="color:rgb();font-size:em;text-decoration:underline;">5-1. 選擇安裝的路徑配置及是否同意資料收集：</label>
+
+<br />
+
+安裝配置預設就是執行檔的資料夾。下面&quot;Privacy Notice&quot;的部分，就是問你是否同意NVIDIA取得你的相關資料讓他們做分析。<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/tFVFbqj.jpg"><img src="https://i.imgur.com/tFVFbqj.gif" style="margin: 0px auto; display: block;" width="70%"></a>
+<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:underline;">5-2. 選擇開發環境：</label>
+
+<br />
+
+選擇&quot;Jetson TX2&quot;。<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/uuvigfX.jpg"><img src="https://i.imgur.com/uuvigfX.gif" style="margin: 0px auto; display: block;" width="70%"></a>
+<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:underline;">5-3. 下載JetPack 3.3 組件：</label>
+
+<br />
+
+這邊就是主要的套件管理介面，先按下&quot;Next&quot;。<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/LXuTYOr.jpg"><img src="https://i.imgur.com/LXuTYOr.gif" style="margin: 0px auto; display: block;" width="70%"></a>
+再來會跳出這個介面，選擇你要下載的組件，勾選&quot;Accept All&quot;(全選)，然後按下右下角的&quot;Accept&quot;。<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/rAqJSNS.jpg"><img src="https://i.imgur.com/rAqJSNS.gif" style="margin: 0px auto; display: block;" width="70%"></a>
+之後就要取得super user的權限，打完使用者密碼就可以安裝了。<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/viDlWMD.jpg"><img src="https://i.imgur.com/viDlWMD.gif" style="margin: 0px auto; display: block;" width="50%"></a>
+<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:underline;">5-4. 準備安裝畫面</label>
+
+<br />
+
+<a href="https://i.imgur.com/E3ipRU4.jpg"><img src="https://i.imgur.com/E3ipRU4.gif" style="margin: 0px auto; display: block;" width="70%"></a>
+沒多久會跳出此畫面，按下&quot;OK&quot;即可。<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+(中譯：根據組件選擇，請注意嵌入式終端中的提示 ： /可能需要其他用戶輸入  /按照屏幕上的說明繼續)<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/imGz6Bp.jpg"><img src="https://i.imgur.com/imGz6Bp.gif" style="margin: 0px auto; display: block;" width="50%"></a>
+<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:underline;">5-5. 安裝中畫面：(安裝時間依據網路速度約3~6小時)</label>
+
+<br />
+
+<a href="https://i.imgur.com/6mbO8xk.jpg"><img src="https://i.imgur.com/6mbO8xk.gif" style="margin: 0px auto; display: block;" width="70%"></a>
+安裝完後，會跳出此畫面，按下&quot;Next&quot;。<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/BBfwZ1k.jpg"><img src="https://i.imgur.com/BBfwZ1k.gif" style="margin: 0px auto; display: block;" width="70%"></a>
+<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:underline;">5-6. 選擇網路配置</label>
+
+<br />
+
+建議使用有線網路配置(傳輸上比較不會出問題)，故選擇第一個選項即可。<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/ccmaLP3.jpg"><img src="https://i.imgur.com/ccmaLP3.gif" style="margin: 0px auto; display: block;" width="70%"></a>
+<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:underline;">5-7. 選擇網路介面卡</label>
+
+<br />
+
+如果你的主機沒有其他的介面卡，上面應該只顯示一張網路介面卡<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/HIsZ6Vs.jpg"><img src="https://i.imgur.com/HIsZ6Vs.gif" style="margin: 0px auto; display: block;" width="70%"></a>
+接下來這個畫面，就是告訴你它接下來要幹嘛的樣子<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/9kwbWV4.jpg"><img src="https://i.imgur.com/9kwbWV4.gif" style="margin: 0px auto; display: block;" width="70%"></a></p>
+<h3 id="6-接上tx2開始刷機">6. 接上TX2，開始刷機~~</h3>
+<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:underline;">6-1. 請依照畫面指示做：</label>
+
+<br />
+
+<ol>
+<li><strong>將裝置關機：</strong> 如果你的電源是連接著，把電源線拔掉。<label class="colorfulText" style="color:rgb(252, 29, 0);font-size:em;text-decoration:underline;">裝置&#39;必須&#39;是關機狀態</label>
+，並不是待機或睡眠狀態。</li>
+<li><strong>接上傳輸線</strong> (USB-A 對 mircoUSB)：一端接上開發版(TX2)、另一端接上主機(Ubuntu)。</li>
+<li><strong>接上電源線</strong></li>
+<li><strong>按下開機鍵</strong>(長按約1s)：然後長<label class="colorfulText" style="color:rgb(252, 29, 0);font-size:em;text-decoration:underline;">按還原鍵不鬆開，並按下重置鍵約2s以上再鬆開，最後再鬆開還原鍵</label>
+，強制裝置進入還原模式。</li>
+<li>如果裝置進入還原模式，打lsusb命令裡面會有&quot;NVidia Corp&quot;。
+<a href="https://i.imgur.com/gokfAoX.jpg"><img src="https://i.imgur.com/gokfAoX.gif" style="margin: 0px auto; display: block;" width="70%"></a>
+<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:underline;">6-2. 確認TX2是否連接成功：</label>
+
+<br />
+
+命令：<code>$ lsusb</code> <label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+有看到<label class="colorfulText" style="color:rgb(0, 100, 0);font-size:em;text-decoration:underline;">&#39;NVidia Corp&#39;代表有成功</label>
+。<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/G0owDsJ.jpg"><img src="https://i.imgur.com/G0owDsJ.gif" style="margin: 0px auto; display: block;" width="70%"></a>
+<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:underline;">6-3. 之後就放著給它跑，約30分鐘至1小時左右會完成。</label>
+
+<br />
+
+完成後會看到<label class="colorfulText" style="color:rgb(0, 100, 0);font-size:em;text-decoration:;">&#39;Installation of target components finished, close this windows to continue.&#39;</label>
+。<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/o9C5eIF.jpg"><img src="https://i.imgur.com/o9C5eIF.gif" style="margin: 0px auto; display: block;" width="70%"></a>
+最後，刷機結束畫面。會問你要不要把下載的檔案刪掉：<label class="colorfulText" style="color:rgb();font-size:em;text-decoration:;"></label>
+
+<br />
+
+<a href="https://i.imgur.com/6u4xulL.jpg"><img src="https://i.imgur.com/6u4xulL.gif" style="margin: 0px auto; display: block;" width="70%"></a></li>
+</ol>
+<hr>
+<p>參考來源：<a href="ttps://blog.csdn.net/QLULIBIN/article/details/78629305">CSDN | Jetson TX2 刷机并安装JetPack3.1</a></p>
+  
+  
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://terahake.netlify.app/post/soldier-service-experience-1/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://terahake.netlify.app/post/soldier-service-experience-1/">成功嶺366T 補充兵心得分享 行前準備</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+  
+  
+  
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'terahake';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="https://terahake.netlify.app/js/ui.js"></script>
+<script src="https://terahake.netlify.app/js/menus.js"></script>
+
+
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'Your Google Analytics tracking ID', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+
+<script src="https://terahake.netlify.app/js/math-code.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+
+</body>
+</html>

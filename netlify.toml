@@ -1,5 +1,5 @@
 [build]
-  command = "Netlify (Hugo)"
+  command = "Hugo"
   publish = "public"
 
 [build.environment]

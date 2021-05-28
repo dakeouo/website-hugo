@@ -1,4 +1,4 @@
-baseURL = "https://terahake.netlify.app/"
+baseURL = "https://terahake.in/"
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "zh-tw"
 # language code
@@ -20,7 +20,7 @@ theme = "blackburn"
   # Shown in the home page
   subtitle = "A novice engineer who is still self-exploring"
   brand = "Terahake"
-  googleAnalytics = "G-BD3C5TX2NY"
+  googleAnalytics = "UA-152749873-1"
   disqus = "terahake"
   # CSS name for highlight.js
   highlightjs = "androidstudio"

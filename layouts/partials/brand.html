@@ -1,0 +1,6 @@
+<div class="pure-menu-heading" style="background-color: unset; text-align: center;">
+	<img src="{{ .Site.BaseURL }}img/favicon.ico" style="width: 70%;"><br />
+	{{ with .Site.Params.brand }}
+	<label class="brand" href="/">{{ . | safeHTML }}</label>
+	{{ end }}
+</div>

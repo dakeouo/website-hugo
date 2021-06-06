@@ -27,4 +27,3 @@ date: 2020-11-11T11:00:12+08:00
 - Microsoft Technology Associate (MTA) - Software Development Fundamentals
 - Techficiency Quotient Certification(TQC) - Cloud Techology and Internet Services(Professional)
 - Techficiency Quotient Certification(TQC) - Linux System Management(Professional)
-- Google Course from Coursera - Learn ML with Google Cloud

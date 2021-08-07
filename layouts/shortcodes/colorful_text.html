@@ -1,4 +1,20 @@
-<label class="colorfulText" style="color:rgb({{ .Get `color_` }});font-size:{{ .Get `font_size` }}em;text-decoration:{{ .Get `text_dec` }};">{{ .Get `text_` }}</label>
+<label class="colorfulText" style="color:rgb({{ .Get `color_` }});font-size:{{ .Get `font_size` }}em;text-decoration:{{ .Get `text_dec` }};{{with .Get `font_family` }}font-family:{{.}}{{end}};">
+
+
+{{with .Get `pre_sp` }}
+{{ range $i := (seq (int .)) }}
+&nbsp;
+{{end}}
+{{end}}
+
+{{ .Get `text_` }}
+
+{{with .Get `past_sp` }}
+{{ range $i := (seq (int .)) }}
+&nbsp;
+{{end}}
+{{end}}
+</label>
 {{with .Get `br_` }}
 <br />
 {{end}}

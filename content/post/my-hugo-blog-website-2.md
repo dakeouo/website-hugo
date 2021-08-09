@@ -4,7 +4,7 @@ title: "Hugo架站紀錄 #2 - 用Github+Netlify架設自己的公開網站"
 date: 2021-08-07T23:28:23+08:00
 category: "Hugo架站"
 tags: [
-    "Hugo",
+    "Netlify",
     "網頁設計",
 ]
 ---
@@ -71,6 +71,7 @@ tags: [
 1. 點選上面那列的"Site setting"
 2. 選擇"Domain management"
 3. 在醜醜的那個網址後面有個"Option"，下拉選擇"Edit site name"
+
 {{< img_imgur uSkpEFS 80 >}}
 
 輸入你想要的名稱，使你的網址變成"[自訂名稱].netlify.net"。但記住，這個名稱需要是不重複且唯一的名字

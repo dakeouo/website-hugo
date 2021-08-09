@@ -93,14 +93,16 @@ Hugo安裝檔下載位置：[https://github.com/gohugoio/hugo/releases](https://
 
 ### 建立文章
 在建立文章之前，先來對這個網站作設定：(將以下的內入複製貼上即可)
-> {{< colorful_text color_="100, 50, 50" font_family="Courier" text_="[menu]" br_="0">}}
-> {{< colorful_text color_="100, 50, 50" font_family="Courier" text_="[[menu.main]]" pre_sp="1" br_="0">}}
-> {{< colorful_text color_="100, 50, 50" font_family="Courier" text_="identifier = \"post\"" pre_sp="2" br_="0">}}
-> {{< colorful_text color_="100, 50, 50" font_family="Courier" text_="name = \"Posts\"" pre_sp="2" br_="0">}}
-> {{< colorful_text color_="100, 50, 50" font_family="Courier" text_="url = \"/post/\"" pre_sp="2" br_="0">}}
-> {{< colorful_text color_="100, 100, 100" font_family="Courier" text_="# title will be shown when you hover on this menu link" pre_sp="2" br_="0">}}
-> {{< colorful_text color_="100, 50, 50" font_family="Courier" text_="title = \"\"" pre_sp="2" br_="0">}}
-> {{< colorful_text color_="100, 50, 50" font_family="Courier" text_="weight = 1" pre_sp="2" br_="0">}}
+```toml
+[menu]
+  [[menu.main]]
+    identifier = "post"
+    url = "/post/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+```
+
 
 {{< img_imgur CcCBmSL 90 >}}
 

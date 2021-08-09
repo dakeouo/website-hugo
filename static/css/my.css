@@ -7,6 +7,10 @@ body {
 	font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 }
 
+pre code {
+	border-radius: 0.5em;
+}
+
 a {
   color: #ff881a;
 }

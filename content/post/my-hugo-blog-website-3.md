@@ -1,8 +1,8 @@
 ---
 author: "Dake Hong"
-title: "Hugo架站紀錄 #3 - Netlify網址變身記"
+title: "Hugo架站紀錄 #3：Netlify網址變身記"
 date: 2021-08-08T16:07:45+08:00
-category: "Hugo架站"
+category: "Hugo架站紀錄"
 tags: [
     "Freenom",
     "Netlify",

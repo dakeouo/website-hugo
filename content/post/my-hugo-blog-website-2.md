@@ -1,8 +1,8 @@
 ---
 author: "Dake Hong"
-title: "Hugo架站紀錄 #2 - 用Github+Netlify架設自己的公開網站"
+title: "Hugo架站紀錄 #2：用Github+Netlify架設自己的公開網站"
 date: 2021-08-07T23:28:23+08:00
-category: "Hugo架站"
+category: "Hugo架站紀錄"
 tags: [
     "Netlify",
     "網頁設計",

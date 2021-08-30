@@ -57,10 +57,10 @@ Bachelor degree in **National Chin-Yi University of Technology (NCUT)** Departme
 | 前端首頁 | 後端首頁 |
 
 -- **{{< colorful_text color_="100, 100, 100" font_size="1.2" text_="Student HW Manage System(Group's final project for college course)">}}** **{{< colorful_text color_="200, 50, 100" text_="[RWD]">}}**
- - Link：{{< colorful_text color_="172, 172, 172" text_="Website">}} / [Github](https://github.com/dakeouo/NCUT_LaraProj)
+ - Link：[Website](https://dake.work/laraweb2019/) / [Github](https://github.com/dakeouo/NCUT_LaraProj)
  - Template：[Pure(Marketing)](https://github.com/pure-css/pure/tree/master/site/static/layouts/marketing)
 
-大三下【行動裝置應用程式設計】課程期末分組專案，為一套簡易型的師生作業管理平台。該網站以[Laravel](https://laravel.com/)框架所製作而成。該課程目的，**分組使用版本控制，協同合作專案**，最終完成一個**完整的Laravel網站**。
+大三下【網站資訊系統開發實務】課程期末分組專案，為一套簡易型的師生作業管理平台。該網站以[Laravel](https://laravel.com/)框架所製作而成。該課程目的，**分組使用版本控制，協同合作專案**，最終完成一個**完整的Laravel網站**。
 | {{< img_imgur c9O2ujc 90 "#aaa">}} | {{< img_imgur EeIcIEQ 90 "#aaa">}} |
 | :---: | :---: |
 | 首頁 | 學生成績畫面(助教端) |

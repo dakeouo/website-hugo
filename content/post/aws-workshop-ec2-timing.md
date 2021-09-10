@@ -4,6 +4,7 @@ title: "AWS實作紀錄 #1：定時開關機的AWS EC2執行個體"
 date: 2021-09-06T11:00:13+08:00
 category: "AWS實作紀錄"
 tags: [
+    "AWS",
     "AWS IAM",
     "AWS EC2",
     "AWS Lambda",

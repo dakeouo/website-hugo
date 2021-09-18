@@ -3,7 +3,7 @@ author: "Dake Hong"
 title: "About Me"
 date: 2020-11-11T11:00:12+08:00
 ---
-{{< author-about photo-name="author.jpg" author-name="Dake Hong" self-info="Master student of NCUT Electronic Engineering. Started preparing AWS SAA-C02 certification a few months ago. Wanted find the job related to AWS platform and cloud application in the future.">}}
+{{< author-about photo-name="author.jpg" author-name="Dake Hong" self-info="畢業於國立勤益科大電子工程系研究所，研究領域為操作系統設計與機器學習實驗數據分析。高中就對於Linux系統有基礎認知，也對雲端虛擬化這部分有興趣；大學使用過AWS與GCP兩雲端平台來架設網站，也有修讀Linux系統與雲端應用的相關課程。目前有AWS雲端從業人員證照，未來想找尋與AWS平台應用相關的職務。">}}
 
 ## {{< colorful_text color_="172, 90, 0" text_="Education">}}
 -- **{{< colorful_text color_="100, 100, 100" font_size="1.2" text_="國立勤益科技大學">}}**

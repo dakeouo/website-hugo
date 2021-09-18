@@ -18,7 +18,7 @@ theme = "blackburn"
 
 [params]
   # Shown in the home page
-  subtitle = "A novice engineer who is still self-exploring"
+  subtitle = "A novice cloud engineer who keeps learning"
   brand = "Terahake"
   googleAnalytics = "UA-152749873-1"
   disqus = "terahake"

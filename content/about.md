@@ -35,14 +35,14 @@ Bachelor degree in **National Chin-Yi University of Technology (NCUT)** Departme
  - Link：[Website](https://terahake.in) / [Github](https://github.com/dakeouo/website-with-hugo)
  - Template：[Blackburn](https://github.com/yoshiharuyamashita/blackburn/)
 
-使用[Hugo](https://gohugo.io/)框架架站，並使用[Netlify](https://www.netlify.com/)託管網站。網站內容以Markdown語法編輯撰寫而成，並將檔案放置在Github上進行版本控制，且有[Google Analytics](https://analytics.google.com)插件進行網頁流量監控。
+第二代個人網站，使用[Hugo](https://gohugo.io/)框架架站，並使用[Netlify](https://www.netlify.com/)託管網站。網站內容以Markdown語法編輯撰寫而成，並將檔案放置在Github上進行版本控制，且有[Google Analytics](https://analytics.google.com)插件進行網頁流量監控。
 {{< img_imgur MXDWKhJ 60 "#aaa">}}
 
 -- **{{< colorful_text color_="100, 100, 100" font_size="1.2" text_="Previous Blog(Personal Website)">}}** **{{< colorful_text color_="200, 50, 100" text_="[RWD]">}}**
  - Link：[Website](https://dake.work/ciblog/) / [Github](https://github.com/dakeouo/CI_Blogger)
  - Template：Frontend-[ION](https://www.themezy.com/free-website-templates/84-classic-ion-free-responsive-template) / Backend-[Startmin](https://github.com/secondtruth/startmin)
 
-使用[Codeigniter](https://codeigniter.org.tw/)框架架站，包含網頁後台管理，為初代個人網站。該網站除了一般文章外，還有[CPE一星題](https://cpe.cse.nsysu.edu.tw/environment.php#starList)頁面(雖然沒正式使用過)，且在前端有[Google Analytics](https://analytics.google.com)插件來管理網頁流量。後端管理系統可以輕易地進行網頁的撰寫與預覽，並有標簽管理、文章分類管理等功能。
+初代個人網站，使用[Codeigniter](https://codeigniter.org.tw/)框架架站，包含後台管理，使用MySQL資料庫來管理網頁內容。該網站除了一般文章外，還有[CPE一星題](https://cpe.cse.nsysu.edu.tw/environment.php#starList)頁面(雖然沒正式使用過)，且在前端有[Google Analytics](https://analytics.google.com)插件來管理網頁流量。後端管理系統可以輕易地進行網頁的撰寫與預覽，並有標簽管理、文章分類管理等功能。
 | {{< img_imgur hPeGcyf 90 "#aaa">}} | {{< img_imgur hW4BVVs 90 "#aaa">}} |
 | :---: | :---: |
 | 前端網頁 | 後端系統 |
@@ -51,7 +51,9 @@ Bachelor degree in **National Chin-Yi University of Technology (NCUT)** Departme
  - Link：[Website](https://dake.work/webproj2019/) / [Github](https://github.com/dakeouo/NCUT_CloudProj)
  - Template：Frontend-{{< colorful_text color_="50, 50, 50" text_="[Self-made]">}} / Backend-{{< colorful_text color_="50, 50, 50" text_="[Self-made]">}}
 
-大四下【雲端應用實務】課程期末分組專案，為一套簡易型的飲料店訂購管理平台。此網站使用[Font Awesome](https://fontawesome.com/)以及[chart.js](https://www.chartjs.org/)來完善網站功能。該課程目的，為**最終可在[GCP](https://cloud.google.com/gcp)平台架設網站**。
+大四下【雲端應用實務】課程期末分組專案，為一套簡易型的飲料店訂購管理平台，利用LAMP ( Linux / Apache / MySQL / PHP )架構所製作而成的網站，並使用CSS來美化網頁。此網站使用[Font Awesome](https://fontawesome.com/)以及[chart.js](https://www.chartjs.org/)來完善網站功能。該課程目的，為**最終可在[GCP](https://cloud.google.com/gcp)平台架設網站**。
+
+網站包含前後端兩部分，顧客可以在前端網頁訂購飲料及訂單狀況；店家可以在後端網頁增修飲料店資訊及操控訂單狀況。而我主要負責 __網站架構的規劃__ 與 __整體網站程式的撰寫__ ，並使用 __Git進行版控__ 。
 | {{< img_imgur sMzTOxQ 90 "#aaa">}} | {{< img_imgur PYGqNFz 90 "#aaa">}} |
 | :---: | :---: |
 | 前端首頁 | 後端首頁 |
@@ -61,6 +63,12 @@ Bachelor degree in **National Chin-Yi University of Technology (NCUT)** Departme
  - Template：[Pure(Marketing)](https://github.com/pure-css/pure/tree/master/site/static/layouts/marketing)
 
 大三下【網站資訊系統開發實務】課程期末分組專案，為一套簡易型的師生作業管理平台。該網站以[Laravel](https://laravel.com/)框架所製作而成。該課程目的，**分組使用版本控制，協同合作專案**，最終完成一個**完整的Laravel網站**。
+
+本系統有 __學生端__ 與 __助教端__ 兩端，且此網站包含了選擇題系統：
+- 在學生端，學生可以進行作業繳交、填答選擇題，並且可以觀看作業成績與評語
+- 在助教端，助教可以增修選擇題、觀看學生的繳交狀況，並且可以批改學生作業並寫下評語
+
+而我在這個專案當中，擔任 __使用者介面設計、網頁結構設計__ 的角色，並完成 __助教端的程式設計__ 。
 | {{< img_imgur c9O2ujc 90 "#aaa">}} | {{< img_imgur EeIcIEQ 90 "#aaa">}} |
 | :---: | :---: |
 | 首頁 | 學生成績畫面(助教端) |

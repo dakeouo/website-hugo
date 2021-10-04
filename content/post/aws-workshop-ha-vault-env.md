@@ -1,8 +1,8 @@
 ---
 author: "Dake Hong"
-title: "AWS實作紀錄 #2：高可用性保管服務 (2021 AWS Summit Taiwan)"
+title: "AWS演講/實作紀錄 #2：高可用性保管服務 (AWS Summit Taiwan 2021)"
 date: 2021-09-10T10:18:27+08:00
-category: "AWS實作紀錄"
+category: "AWS演講/實作紀錄"
 tags: [
     "AWS",
     "AWS IAM",

@@ -90,8 +90,8 @@ Bachelor degree in **National Chin-Yi University of Technology (NCUT)** Departme
 {{< credly_badge a993f6e6-0dcf-4948-a984-ea5f4ee5f057 >}}
 
 ### {{< colorful_text color_="128, 0, 32" text_="National Certified">}}
-- 全國技術士技能檢定 電腦硬體裝修 丙級
-- 全國技術士技能檢定 工業電子 丙級
-- 企業人才技能認證 (TQC) - 雲端技術及網路服務(專業級)
-- 企業人才技能認證 (TQC) - Linux 系統管理(專業級)
+- [查看] 全國技術士技能檢定 電腦硬體裝修 丙級 (編號：120-0216308)
+- [查看] 全國技術士技能檢定 工業電子 丙級 (編號：028-0318918)
+- [[查看](https://i.imgur.com/9SeaOKK.jpg)] 企業人才技能認證 (TQC) - 雲端技術及網路服務(專業級)
+- [[查看](https://i.imgur.com/w8Vkqb8.jpg)] 企業人才技能認證 (TQC) - Linux 系統管理(專業級)
 

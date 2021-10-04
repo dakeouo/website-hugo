@@ -1,6 +1,6 @@
 ---
 author: "Dake Hong"
-title: "AWS演講/實作紀錄 #3-1：AWS 網路基礎架構 - 上篇 (AWS Summit Taiwan 2021)"
+title: "AWS演講/實作紀錄 #3：AWS 網路基礎架構 - 上篇 (AWS Summit Taiwan 2021)"
 date: 2021-10-02T21:20:38+08:00
 category: "AWS演講/實作紀錄"
 tags: [

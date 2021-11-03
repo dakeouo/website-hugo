@@ -21,7 +21,7 @@ Bachelor degree in **National Chin-Yi University of Technology (NCUT)** Departme
  - **Web application framework:** Codeigniter, Laravel
 
 -- **{{< colorful_text font_size="1.1" text_="Programming Languages">}}**
- - Python, C, PHP, HTML, MySQL/MariaDB
+ - Python, PHP, HTML, MySQL/MariaDB, C
 
 -- **{{< colorful_text font_size="1.1" text_="Development Environment">}}**
  - **Operating System:** Fedora, Ubuntu
@@ -29,6 +29,7 @@ Bachelor degree in **National Chin-Yi University of Technology (NCUT)** Departme
 
 -- **{{< colorful_text font_size="1.1" text_="Others">}}**
  - **Version Control:** Git (Github)
+ - **Container Tools:** Docker
 
 ## {{< colorful_text color_="172, 90, 0" text_="Works">}}
 -- **{{< colorful_text color_="100, 100, 100" font_size="1.2" text_="This Website(Personal Website)">}}** **{{< colorful_text color_="200, 50, 100" text_="[RWD]">}}**

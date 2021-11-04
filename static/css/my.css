@@ -37,3 +37,7 @@ a:visited {
 .prev-next-post div nav a{
 	font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 }
+
+.pagination a {
+  color: #642100;
+}

@@ -29,12 +29,12 @@ tags: [
 **{{< colorful_text color_="120, 60, 0" font_size="1" text_="1. 程式一開始會出現歡迎畫面，也會讓你選擇你要的難度" br_="0">}}**
 (選1是3x3、選2是-4x4以此類推，共有5個難度)
 ```
-===================================
-==    Welcome to play Klotski!   ==
-===================================
-Use 'w','a','s','d' to moving block
-   Press 'q' to leave this game.
-===================================
+================================
+==  Welcome to play Klotski!  ==
+================================
+  Use 'w/a/s/d' to moving block
+  Press 'q' to leave this game.
+================================
 Which Klotski's level would you want to play?(1~5):
 ```
 **{{< colorful_text color_="120, 60, 0" font_size="1" text_="2. 選完難度後，就會顯示出你選擇的難度以及題目，並遊戲開始" br_="0">}}**
@@ -54,10 +54,12 @@ OK! Klotski's level will set 'Easy'.
 -------------
 | 7 |   | 3 |
 -------------
+Press key (char):
 ```
 **{{< colorful_text color_="120, 60, 0" font_size="1" text_="3. 使用w、a、s、d鍵來移動方塊(上面也會寫你目前移動了幾次)" br_="0">}}**
 (在遊玩的過程中，可以隨時按下"q"離開遊戲)
 ```
+Press key (char):s
 Moves: 1
 -------------
 | 1 | 5 | 2 |
@@ -66,6 +68,7 @@ Moves: 1
 -------------
 | 7 | 6 | 3 |
 -------------
+Press key (char):s
 Moves: 2
 -------------
 | 1 |   | 2 |
@@ -78,6 +81,7 @@ Moves: 2
 ```
 **{{< colorful_text color_="120, 60, 0" font_size="1" text_="4. 最後，移動完畢會顯示你花費了幾秒" br_="0">}}**
 ```
+Press key (char):w
 Moves: 21
 -------------
 | 1 | 2 | 3 |

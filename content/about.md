@@ -18,7 +18,7 @@ Bachelor degree in **National Chin-Yi University of Technology (NCUT)** Departme
 ## {{< colorful_text color_="172, 90, 0" text_="Technique/Skill">}}
 -- **{{< colorful_text font_size="1.1" text_="Web Development">}}**
  - **Cloud Platform:** AWS (Amazon Web Services)
- - **Web application framework:** Codeigniter, Laravel
+ - **Web application framework:** Codeigniter, Laravel, Flask
 
 -- **{{< colorful_text font_size="1.1" text_="Programming Languages">}}**
  - Python, PHP, HTML, MySQL/MariaDB, C

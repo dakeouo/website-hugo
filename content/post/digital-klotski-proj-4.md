@@ -1,6 +1,6 @@
 ---
 author: "Dake Hong"
-title: "專題紀錄-數字華容道 #4：使用AWS Fargate部屬Flask APP"
+title: "專題紀錄-數字華容道 #4：使用AWS Fargate部署Flask APP"
 date: 2021-11-11T20:46:32+08:00
 category: "專題紀錄-數字華容道"
 tags: [

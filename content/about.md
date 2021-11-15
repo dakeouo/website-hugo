@@ -17,7 +17,7 @@ Bachelor degree in **National Chin-Yi University of Technology (NCUT)** Departme
 
 ## {{< colorful_text color_="172, 90, 0" text_="Technique/Skill">}}
 -- **{{< colorful_text font_size="1.1" text_="Web Development">}}**
- - **Cloud Platform:** AWS (Amazon Web Services)
+ - **Cloud Platform:** AWS (Amazon Web Services), GCP (Google Cloud Platform)
  - **Web application framework:** Codeigniter, Laravel, Flask
 
 -- **{{< colorful_text font_size="1.1" text_="Programming Languages">}}**
@@ -32,6 +32,15 @@ Bachelor degree in **National Chin-Yi University of Technology (NCUT)** Departme
  - **Container Tools:** Docker
 
 ## {{< colorful_text color_="172, 90, 0" text_="Works">}}
+-- **{{< colorful_text color_="100, 100, 100" font_size="1.2" text_="Digital Klotski (Docker + Flask APP)">}}**
+ - Website：[AWS Fargate](http://3.19.59.200:5000) / [GCP Cloud Run](https://klotski-app-z6dnupszra-de.a.run.app)
+ - Github：[Github](https://github.com/dakeouo/proj-klotski-app)
+
+Serverless練習專案。使用[Flask](https://flask.palletsprojects.com/en/2.0.x/)框架來建立一個簡單的網頁益智遊戲 - 數字華容道 (Digital Klotski)，並使用Dockerfile來建立Docker Image，最後使用兩個雲端平台(AWS/GCP)來部署專案：
+ * __AWS__ (ECS + Fargate)：使用[Amazon Elastic Container Service (ECS)](https://aws.amazon.com/tw/ecs/)來建立叢集(cluster)以及[AWS Fargate](https://aws.amazon.com/tw/fargate/)環境的任務(Task)，來部署Flask網站。
+ * __GCP__ (Cloud Build + Cloud Run)：使用[GCP Cloud Build](https://cloud.google.com/cloud_build)來建立GCP的Docker Image，再使用[GCP Cloud Run](https://cloud.google.com/cloud_run)來部署Flask網站。
+{{< img_imgur BNQ3hvu 70 "#aaa">}}
+
 -- **{{< colorful_text color_="100, 100, 100" font_size="1.2" text_="This Website(Personal Website)">}}** **{{< colorful_text color_="200, 50, 100" text_="[RWD]">}}**
  - Link：[Website](https://terahake.in) / [Github](https://github.com/dakeouo/website-with-hugo)
  - Template：[Blackburn](https://github.com/yoshiharuyamashita/blackburn/)

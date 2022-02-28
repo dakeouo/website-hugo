@@ -39,10 +39,9 @@ Which Klotski's level would you want to play?(1~5):
 ```
 **{{< colorful_text color_="120, 60, 0" font_size="1" text_="2. 選完難度後，就會顯示出你選擇的難度以及題目，並遊戲開始" br_="0">}}**
 (如果輸入有誤，預設會選擇最簡單難度)
-{{< pure_table
-	"等級|Level 1|Level 2|Level 3|Level 4|Level 5"
-	"難度|Easy (3x3)|Normal (4x4)|Difficult (5x5)|Hard (6x6)|Expert (7x7)"
->}}
+|Level 1|Level 2|Level 3|Level 4|Level 5|
+|:--:|:--:|:--:|:--:|:--:|
+|Easy (3x3)|Normal (4x4)|Difficult (5x5)|Hard (6x6)|Expert (7x7)|
 ```
 OK! Klotski's level will set 'Easy'.
 ================================

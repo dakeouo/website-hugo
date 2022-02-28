@@ -66,11 +66,10 @@ AWS有很多其他全託管的服務，是可以不需要修改路由表就可�
 {{< img_imgur MAf6KPo 90 >}}
 
 **{{< colorful_text color_="192, 100, 50" font_size="1.1" text_="Security Groups vs. NACLs" br_="0">}}**
-{{< pure_table
-	"Security Groups|Network ACLs"
-	"運作於執行個體上 Operates at instance level | 運作於子網域上 Operates at subnet level"
-	"只支援允許規則 Supports allow rules only | 支援允許與禁止規則 Supports allow and deny rules"
-	"有狀態：無論規則如何，都會自動允許返回流量 Stateful: return traffic is automatically allowed regardless of any rules | 無狀態：規則必須明確允許返回流量 Stateless: return traffic must be explicitly allowed by rules"
-	"在決定是否允許流量之前評估所有規則 All rules evaluated before deciding whether to allow traffic | 決定是否允許流量時按順序評估的規則 Rules evaluated in order when deciding whether to allow traffic"
-	"僅適用於與安全組明確關聯的實例 Applies only to instances explicitly associated with the security group | 自動應用於啟動到關聯子網中的所有實例 Automatically applies to all instances launched into associated subnets"
->}}
+|Security Groups|Network ACLs|
+|:--|:--|
+|運作於執行個體上 Operates at instance level | 運作於子網域上 Operates at subnet level|
+|只支援允許規則 Supports allow rules only | 支援允許與禁止規則 Supports allow and deny rules|
+|有狀態：無論規則如何，都會自動允許返回流量 Stateful: return traffic is automatically allowed regardless of any rules | 無狀態：規則必須明確允許返回流量 Stateless: return traffic must be explicitly allowed by rules|
+|在決定是否允許流量之前評估所有規則 All rules evaluated before deciding whether to allow traffic | 決定是否允許流量時按順序評估的規則 Rules evaluated in order when deciding whether to allow traffic|
+|僅適用於與安全組明確關聯的實例 Applies only to instances explicitly associated with the security group | 自動應用於啟動到關聯子網中的所有實例 Automatically applies to all instances launched into associated subnets|

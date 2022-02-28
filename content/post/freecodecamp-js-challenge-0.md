@@ -10,7 +10,7 @@ tags: [
 ---
 FreeCodeCamp是一個開放式學習平台，目前他有許多平台提供大家來學習，包含[Youtube](https://www.youtube.com/c/Freecodecamp)、[Github](https://github.com/freeCodeCamp)、[Website](https://www.freecodecamp.org/)等。而他教學的內容包含Python、JavaScript、CSS、HTML等網頁前後端的程式語言，可說是資源非常多的學習平台。
 <!--more-->
-{{< fluid_img "https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png" >}}
+[image.png](https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png)
 
 我也是最近才知道FreeCodeCamp有一個可以循序漸進學習網頁前後端的網站，它可以手把手帶領你進入網頁前後端的世界。而在FreeCodeCamp的[學習平台](https://www.freecodecamp.org/learn/)裡，目前有下列這幾種專案認證：
 - Responsive Web Design Certification (300 hours)

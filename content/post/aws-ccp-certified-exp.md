@@ -80,13 +80,12 @@ AWS的白皮書的內容很多，而且都是英文，許多線上AWS證照課�
 - 報名方式：Pearson VUE 和 PSI 測驗中心皆可報名
 - 考試方式：線上監考考是，考題有選擇題與多選題
 - 考試範圍：
-{{< pure_table
-	"Domain | % of Exam"
-	"Domain 1： Cloud Concepts (雲端概念) | 26%"
-	"Domain 2： Security and Compliance (安全與合規性) | 25%"
-	"Domain 3： Technology (技術) | 33%"
-	"Domain 4： Billing and Pricing (帳單與定價)  | 16%"
->}}
+|Domain | % of Exam|
+|:--|:--:|
+|Domain 1： Cloud Concepts (雲端概念) | 26%|
+|Domain 2： Security and Compliance (安全與合規性) | 25%|
+|Domain 3： Technology (技術) | 33%|
+|Domain 4： Billing and Pricing (帳單與定價)  | 16%|
 
 ### {{< colorful_text color_="172, 90, 0" text_="[整個證照考取過程]">}}
 

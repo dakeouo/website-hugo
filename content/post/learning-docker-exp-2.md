@@ -5,8 +5,7 @@ date: 2021-11-03T17:09:19+08:00
 category: "Docker自學紀錄"
 tags: [
     "Docker",
-    "Docker Compose",
-    "Github Action",
+    "Github",
 ]
 ---
 事隔將近兩個月，終於要來更新這個系列了!! 但這篇目前也是這個系列的最後一篇，未來暫時不會再做更新，因為這篇主要是來介紹一個在 Udemy 上的中文教學課程。

@@ -5,8 +5,6 @@ date: 2021-10-02T21:20:38+08:00
 category: "AWS演講/實作紀錄"
 tags: [
     "AWS",
-    "AWS VPC",
-    "VPC Peering",
 ]
 ---
 非常高興可以參加今年的AWS台灣線上研討會，而我在[AWS演講/實作紀錄 #2](https://terahake.in/post/aws-workshop-ha-vault-env/)也有簡單介紹這次的雲端高峰會，歡迎大家可以去瀏覽。

@@ -5,9 +5,6 @@ date: 2021-10-04T17:02:23+08:00
 category: "AWS演講/實作紀錄"
 tags: [
     "AWS",
-    "AWS VPC",
-    "VPC endpoints",
-    "AWS Network Security",
 ]
 ---
 上篇主要使在講述雲端上的VPC互相連線，而這篇是要講述連回實體機房，或是自己公司內部的部分是如何連線的。

@@ -6,8 +6,6 @@ category: "專題紀錄-數字華容道"
 tags: [
 	"Docker",
     "GCP",
-    "GCP Cloud Build",
-    "GCP Cloud Run",
 ]
 ---
 在上一篇，我們使用AWS Fargate來部署Docker Image，使我們用public IP就可以存取到我們的Flask-based網站。而這篇，我們要使用GCP雲端平台，來部署Docker Image。

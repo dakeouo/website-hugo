@@ -5,7 +5,7 @@ date: 2021-09-18T21:33:17+08:00
 category: "Docker自學紀錄"
 tags: [
     "Docker",
-    "AWS EC2"
+    "AWS"
 ]
 ---
 Docker算是目前許多企業都有在使用的容器化系統。它支援了相當多的Linux平台(Ubuntu、CentOS、Fedora等)，也支援了許多雲端平台，例如AWS、GCP、Azure等。另外也釋出Windows和Mac OS X的桌面版本。

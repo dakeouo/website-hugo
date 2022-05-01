@@ -5,11 +5,6 @@ date: 2021-09-10T10:18:27+08:00
 category: "AWS演講/實作紀錄"
 tags: [
     "AWS",
-    "AWS IAM",
-    "AWS EC2",
-    "AWS DynamoDB",
-    "AWS KMS",
-    "AWS ELB",
 ]
 ---
 很榮幸可以參加到[2021 AWS 台灣雲端高峰會](https://aws.amazon.com/tw/events/taiwan/2021summit/)，今年主辦單位為了鼓勵大家踴躍學習而提供了多重好禮，有AWS 隨行充電鑰匙圈、AWS 無線充電滑鼠墊、Apple Watch S6、 美食平台外送卷等。

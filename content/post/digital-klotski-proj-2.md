@@ -6,7 +6,6 @@ category: "專題紀錄-數字華容道"
 tags: [
 	"Klotski",
     "Docker",
-    "Dockerfile",
 ]
 ---
 Python程式撰寫好後，接下來就是要使用到Docker，建立Dockerfile讓我們的程式成為一個映像(image)，使容器可以運行我們的程式。

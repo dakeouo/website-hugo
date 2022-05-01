@@ -5,10 +5,6 @@ date: 2021-09-06T11:00:13+08:00
 category: "AWS演講/實作紀錄"
 tags: [
     "AWS",
-    "AWS IAM",
-    "AWS EC2",
-    "AWS Lambda",
-    "AWS CloudWatch",
 ]
 ---
 我們有時候不想要讓[Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/tw/ec2/)的執行個體每個月都開720小時(24小時x30天)，而是想要定時開關機來節省經費(例如：只想平日朝九晚五開啟執行個體)，那要如何做? 我們可以使用[Lambda](https://aws.amazon.com/tw/lambda/)和[CloudWatch](https://aws.amazon.com/tw/cloudwatch/) Events來達成定時開關機的任務。

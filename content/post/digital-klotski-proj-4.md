@@ -5,10 +5,7 @@ date: 2021-11-11T20:46:32+08:00
 category: "專題紀錄-數字華容道"
 tags: [
 	"Docker",
-	"Dockerfile",
     "AWS",
-    "AWS ECS",
-    "AWS Fargate",
 ]
 ---
 在我們建立好Python Flask本地端網站後，我們可以將程式碼打包成Docker Image，並且我們可以使用AWS Fargate，公開讓全世界的人都可以存取。

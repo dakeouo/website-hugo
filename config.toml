@@ -5,7 +5,7 @@ defaultContentLanguage = "zh-tw"
 languageCode = "zh-tw"
 title = "Terahake"
 copyright = "&copy; L.J. Hong | Terahake. All rights reserved."
-paginate = 8
+paginate = 6
 
 # Change the default theme to be use when building the site with Hugo
 theme = "ion"
@@ -53,7 +53,7 @@ theme = "ion"
 [author]
   name = "Dake Hong"
   title = "Site Reliability Engineer"
-  description = "畢業於國立勤益科大電子工程系研究所，研究領域為操作系統設計與機器學習實驗數據分析。大學使用過AWS與GCP兩雲端平台來架設網站，也有修讀Linux系統與雲端應用的相關課程，且有AWS雲端從業人員證照。 目前任職系統可靠性工程師一職，協助規劃產品服務程式開發規範流程、確保系統與站台的可靠性。"
+  description = "畢業於國立勤益科大電子工程系研究所，研究領域為操作系統設計與機器學習實驗數據分析。大學使用過AWS與GCP兩雲端平台來架設網站，也有修讀Linux系統與雲端應用的相關課程，且有AWS雲端從業人員證照。 目前任職系統可靠性工程師一職，協助規劃程式從開發至部署的規範流程，以及確保系統與站台的可靠性。"
   
   email = "dake852@gmail.com"
   location = "Taichung, Taiwan"

@@ -23,7 +23,7 @@ theme = "ion"
   dateFormat = "2006-01-02 15:04"
   # Include any custom CSS and/or JS files
   # (relative to /static folder)
-  # custom_css = ["css/my.css"]
+  custom_css = ["css/my.css"]
   custom_icon = ["img/favicon.ico"]
   # custom_js = ["js/my.js"]
 
@@ -53,7 +53,7 @@ theme = "ion"
 [author]
   name = "Dake Hong"
   title = "Site Reliability Engineer"
-  description = "畢業於國立勤益科大電子工程系研究所，研究領域為操作系統設計與機器學習實驗數據分析。高中就對於Linux系統有基礎認知，也對雲端虛擬化這部分有興趣；大學使用過AWS與GCP兩雲端平台來架設網站，也有修讀Linux系統與雲端應用的相關課程。目前有AWS雲端從業人員證照，未來想找尋與AWS平台應用相關的職務。"
+  description = "畢業於國立勤益科大電子工程系研究所，研究領域為操作系統設計與機器學習實驗數據分析。大學使用過AWS與GCP兩雲端平台來架設網站，也有修讀Linux系統與雲端應用的相關課程，且有AWS雲端從業人員證照。 目前任職系統可靠性工程師一職，協助規劃產品服務程式開發規範流程、確保系統與站台的可靠性。"
   
   email = "dake852@gmail.com"
   location = "Taichung, Taiwan"

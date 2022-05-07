@@ -11,7 +11,8 @@ build:
   services:
     - docker:19.03.12-dind
   before_script:
-    - gcloud auth activate-service-account --key-file $GCP_SERVICE_ACCOUNT_KEY # Google Cloud service accounts
+    - echo $GCP_SERVICE_ACCOUNT_KEY > gcloud-service-key.json # Google Cloud service accounts
+    - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud auth gitlab-configure-docker --quiet
   script:
     - docker build $GCR_IMAGE_FULL_NAME .

@@ -1,18 +1,12 @@
 stages:
   - build
+  - deploy
 
 variables:
   GCR_HOST: asia.gcr.io
   GCR_IMAGE_FULL_NAME: $GCR_HOST/$GCP_PROJECT_NAME/$DOCKER_IMAGE_NAME:$CI_COMMIT_SHORT_SHA
 
-view-value:
-  stage: build
-  script:
-    - echo "CI_PIPELINE_ID=$CI_PIPELINE_ID"
-    - echo "CI_PIPELINE_IID=$CI_PIPELINE_IID"
-    - echo "CI_RUNNER_ID=$CI_RUNNER_ID"
-
-docker:
+Docker_Build:
   stage: build
   image: google/cloud-sdk:alpine
   services:
@@ -28,3 +22,25 @@ docker:
   script:
     - docker build -t $GCR_IMAGE_FULL_NAME .
     - docker push $GCR_IMAGE_FULL_NAME
+
+CloudRun_Deploy:
+  stage: deploy
+  image: google/cloud-sdk:alpine
+  before_script:
+    - echo $GCP_SERVICE_ACCOUNT_KEY > gcloud-service-key.json # Google Cloud service accounts
+    - gcloud auth activate-service-account --key-file gcloud-service-key.json
+  script:
+    - gcloud run deploy $Run_ServiceName \
+        --allow-unauthenticated \
+        --image=$GCR_IMAGE_FULL_NAME \
+        --platform=managed \
+        --region=asia-east1 \
+        --project=$GCP_PROJECT_NAME \
+        --memory $Run_Memory \
+        --cpu $Run_CPU \
+        --timeout $Run_Timeout \
+        --concurrency $Run_Concurrency \
+        --max-instances $Run_Max_Instances \
+        --port=$Run_Port \
+        --set-env-vars 'TZ=Asia/Taipei' \
+        --set-env-vars 'IP=0.0.0.0'

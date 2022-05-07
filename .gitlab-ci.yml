@@ -15,5 +15,5 @@ build:
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud auth configure-docker --quiet
   script:
-    - docker build $GCR_IMAGE_FULL_NAME .
+    - docker build -t $GCR_IMAGE_FULL_NAME .
     - docker push $GCR_IMAGE_FULL_NAME

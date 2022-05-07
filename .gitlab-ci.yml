@@ -5,7 +5,14 @@ variables:
   GCR_HOST: asia.gcr.io
   GCR_IMAGE_FULL_NAME: $GCR_HOST/$GCP_PROJECT_NAME/$DOCKER_IMAGE_NAME:$CI_COMMIT_SHORT_SHA
 
-build:
+view-value:
+  stage: build
+  script:
+    - echo "CI_PIPELINE_ID=$CI_PIPELINE_ID"
+    - echo "CI_PIPELINE_IID=$CI_PIPELINE_IID"
+    - echo "CI_RUNNER_ID=$CI_RUNNER_ID"
+
+docker:
   stage: build
   image: google/cloud-sdk:alpine
   services:

@@ -30,17 +30,16 @@ CloudRun_Deploy:
     - echo $GCP_SERVICE_ACCOUNT_KEY > gcloud-service-key.json # Google Cloud service accounts
     - gcloud auth activate-service-account --key-file gcloud-service-key.json
   script:
-    - gcloud run deploy $Run_ServiceName \
-        --allow-unauthenticated \
-        --image $GCR_IMAGE_FULL_NAME \
-        --platform managed \
-        --region asia-east1 \
-        --project $GCP_PROJECT_NAME \
-        --memory $Run_Memory \
-        --cpu $Run_CPU \
-        --timeout $Run_Timeout \
-        --concurrency $Run_Concurrency \
-        --max-instances $Run_Max_Instances \
-        --port $Run_Port \
-        --set-env-vars 'TZ=Asia/Taipei' \
-        --set-env-vars 'IP=0.0.0.0'
+    - gcloud run deploy $Run_ServiceName --image=$GCR_IMAGE_FULL_NAME 
+      --platform=managed 
+      --region=asia-east1 
+      --project=$GCP_PROJECT_NAME 
+      --memory=$Run_Memory 
+      --cpu=$Run_CPU 
+      --timeout=$Run_Timeout 
+      --concurrency=$Run_Concurrency 
+      --max-instances=$Run_Max_Instances 
+      --port=$Run_Port 
+      --set-env-vars='TZ=Asia/Taipei' 
+      --set-env-vars='IP=0.0.0.0' 
+      --allow-unauthenticated

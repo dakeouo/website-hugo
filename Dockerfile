@@ -1,12 +1,13 @@
-FROM klakegg/hugo:0.82.0-alpine
-
-ARG HUGO_BASE_URL
+FROM klakegg/hugo:0.82.0-alpine as build
 
 COPY . /src
 RUN apk add --no-cache git 
 RUN git submodule init && git submodule update
-
 WORKDIR /src
-EXPOSE 1313
+RUN hugo
 
-ENTRYPOINT hugo serve
+FROM nginx:alpine
+
+COPY --from=build /src/public /usr/share/nginx/html
+WORKDIR /usr/share/nginx/html
+EXPOSE 80

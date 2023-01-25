@@ -1,4 +1,19 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+:root {
+	--theme-color0: #895207;
+	--theme-color1: #FF8521;
+	--theme-color2: #69322A;
+	--theme-color3: #9E4B18; /*按鈕、標籤文字*/
+	--theme-color4: #D9C098; /*標籤文字底色*/
+
+	--def-text-color1:#403135;
+	--def-text-color2:#353130;
+
+	--btnsp-hover-color:#D06022;
+	--btnsp-active-color:#69322A;
+}
+
 body {
 	-webkit-font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 	-moz-font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;

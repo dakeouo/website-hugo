@@ -79,7 +79,7 @@ theme = "ion"
     works_title = "數字華容道(Docker + Flask)"
     works_image = "Digital Klotski.png"
     works_github = "https://github.com/dakeouo/proj-klotski-app"
-    works_url = "https://klotski-app-z6dnupszra-de.a.run.app/"
+    works_url = "https://klotski-app.terahake.in/"
     works_description = "Serverless練習專案。使用<a href='https://flask.palletsprojects.com/en/2.0.x/'>Flask</a>框架來建立一個簡單的網頁益智遊戲 - 數字華容道 (Digital Klotski)，並使用Dockerfile來建立Docker Image，最後使用兩個雲端平台(AWS/GCP)來部署專案：<br /><ul><li><b>AWS</b> (ECS + Fargate)：使用<a href='https://aws.amazon.com/tw/ecs/'>Amazon Elastic Container Service (ECS)</a>來建立叢集(cluster)以及<a href='https://aws.amazon.com/tw/fargate/'>AWS Fargate</a>環境的任務(Task)，來部署Flask網站。</li><li><b>GCP</b> (Cloud Build + Cloud Run)：使用<a href='https://cloud.google.com/cloud_build'>GCP Cloud Build</a>來建立GCP的Docker Image，再使用<a href='https://cloud.google.com/cloud_run'>GCP Cloud Run</a>來部署Flask網站。</li></ul>"
 
   [[author.block_works]]
@@ -90,24 +90,17 @@ theme = "ion"
     works_description = "第二代個人網站，使用<a href='https://gohugo.io/'>Hugo</a>框架架站，並使用<a href='https://www.netlify.com/'>Netlify</a>託管網站。網站內容以Markdown語法編輯撰寫而成，並將檔案放置在Github上進行版本控制，且有<a href='https://analytics.google.com'>Google Analytics</a>插件進行網頁流量監控。"
 
   [[author.block_works]]
-    works_title = "初代部落格(個人網站)"
-    works_image = "self-website1.png"
-    works_github = "https://github.com/dakeouo/CI_Blogger"
-    works_url = "https://dake.work/ciblog/"
-    works_description = "初代個人網站，使用<a href='https://codeigniter.org.tw/'>Codeigniter</a>框架架站，包含後台管理，使用MySQL資料庫來管理網頁內容。該網站除了一般文章外，還有<a href='https://cpe.cse.nsysu.edu.tw/environment.php#starList'>CPE一星題</a>頁面(雖然沒正式使用過)，且在前端有<a href='https://analytics.google.com'>Google Analytics</a>插件來管理網頁流量。後端管理系統可以輕易地進行網頁的撰寫與預覽，並有標簽管理、文章分類管理等功能。"
-
-  [[author.block_works]]
     works_title = "飲料店管理系統(大學期末專案)"
     works_image = "teashop manage system.png"
     works_github = "https://github.com/dakeouo/NCUT_CloudProj"
-    works_url = "https://dake.work/webproj2019/"
+    works_url = "https://ncut-cloud2019.terahake.in/"
     works_description = "大四下【雲端應用實務】課程期末分組專案，為一套簡易型的飲料店訂購管理平台，利用LAMP ( Linux / Apache / MySQL / PHP )架構所製作而成的網站，並使用CSS來美化網頁。此網站使用<a href='https://fontawesome.com/'>Font Awesome</a>以及<a href='https://www.chartjs.org/'>chart.js</a>來完善網站功能。該課程目的，為<b>最終可在<a href='https://cloud.google.com/gcp'>GCP</a>平台架設網站</b>。<br />網站包含前後端兩部分，顧客可以在前端網頁訂購飲料及訂單狀況；店家可以在後端網頁增修飲料店資訊及操控訂單狀況。而我主要負責<b> 網站架構的規劃</b>與<b>整體網站程式的撰寫</b>，並使用<b>Git進行版控</b>。"
 
   [[author.block_works]]
     works_title = "學生作業管理系統(大學期末專案)"
     works_image = "stdHW manage system.png"
     works_github = "https://github.com/dakeouo/NCUT_LaraProj"
-    works_url = "https://dake.work/laraweb2019/"
+    works_url = "https://ncut-lara2019.terahake.in/"
     works_description = "大三下【網站資訊系統開發實務】課程期末分組專案，為一套簡易型的師生作業管理平台。該網站以<a href='https://laravel.com/'>Laravel</a>框架所製作而成。該課程目的，<b>分組使用版本控制，協同合作專案</b>，最終完成一個<b>完整的Laravel網站</b>。<br />本系統有 <b>學生端</b> 與 <b>助教端</b> 兩端，且此網站包含了選擇題系統：<br /><ul><li>在學生端，學生可以進行作業繳交、填答選擇題，並且可以觀看作業成績與評語</li><li>在助教端，助教可以增修選擇題、觀看學生的繳交狀況，並且可以批改學生作業並寫下評語</li></ul>而我在這個專案當中，擔任 <b>使用者介面設計、網頁結構設計</b> 的角色，並完成 <b>助教端的程式設計</b> 。"
 
   [[author.block_certified]]

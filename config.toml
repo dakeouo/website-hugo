@@ -12,7 +12,7 @@ theme = "ion"
 
 [params]
   # Shown in the home page
-  subtitle = "A novice cloud engineer who keeps learning"
+  subtitle = "A novice engineer with constant learning experience"
   brand = "Terahake"
   googleAnalytics = "G-0RETWSDKDV"
   disqus = "terahake"
@@ -53,7 +53,7 @@ theme = "ion"
 [author]
   name = "Dake Hong"
   title = "Site Reliability Engineer"
-  description = "畢業於國立勤益科大電子工程系研究所，研究領域為操作系統設計與機器學習實驗數據分析。大學使用過AWS與GCP兩雲端平台來架設網站，也有修讀Linux系統與雲端應用的相關課程，且有AWS雲端從業人員證照。 目前任職系統可靠性工程師一職，協助規劃程式從開發至部署的規範流程，以及確保系統與站台的可靠性。"
+  description = "畢業於國立勤益科大電子工程系研究所，研究領域為操作系統設計與機器學習實驗數據分析。目前於今網智慧科技任職系統可靠性工程師一職，協助規劃程式從開發至部署的規範流程，以及確保系統與站台的可靠性。平常空閒時會製作一些小東西，有機會的話會記錄於目前這個網誌中。"
   
   email = "dake852@gmail.com"
   location = "Taichung, Taiwan"

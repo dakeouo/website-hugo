@@ -14,7 +14,7 @@ theme = "ion"
   # Shown in the home page
   subtitle = "A novice cloud engineer who keeps learning"
   brand = "Terahake"
-  googleAnalytics = "UA-152749873-1"
+  googleAnalytics = "G-0RETWSDKDV"
   disqus = "terahake"
   # CSS name for highlight.js
   highlightjs = "androidstudio"

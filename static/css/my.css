@@ -120,6 +120,22 @@ section.footer-copyright {
 		padding: .5em;
 }
 
+.nav-cate {
+	color: var(--theme-color0);
+}
+
+.nav-cate:hover {
+	color: var(--theme-color1);
+}
+
+.nav-tags {
+	background-color: var(--theme-color0);
+}
+
+.nav-tags:hover {
+	background-color: var(--theme-color4);
+}
+
 /*--------------------------------------------------------------------------
 +	Footer Style (overrides Bootstrap style)
 --------------------------------------------------------------------------*/

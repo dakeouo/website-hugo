@@ -1,0 +1,18 @@
+<section>
+  <h3>Categories</h3>
+  {{ if .Site.Taxonomies.category }}
+    <ul class="alt">
+      {{ range $key, $value := .Site.Taxonomies.category }}
+      <li><a class="nav-cate" href="{{ $.Site.BaseURL }}category/{{ $key | urlize }}">{{ $key }}</a></li>
+      {{end}}
+    </ul>
+  {{end}}
+</section>
+<section>
+  <h3>Tags</h3>
+  {{ if .Site.Taxonomies.tags }}
+  {{ range $key, $value := .Site.Taxonomies.tags }}
+  <a href="{{ $.Site.BaseURL }}/tags/{{ $key | urlize  }}" class="badge nav-tags">{{ $key }}</a>
+  {{end}}
+  {{end}}
+</section>

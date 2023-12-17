@@ -340,6 +340,12 @@ section.footer-copyright {
   -ms-transition: all .25s linear;
   transition: all .25s linear;
 }
+
+.pagination > li > a:hover,
+.pagination > li > a:focus {
+	color: var(--theme-color0);
+}
+
 .pagination > li > a:hover,
 .pagination > li > a:focus,
 .pagination > .active > a,
@@ -352,7 +358,7 @@ section.footer-copyright {
 .pagination > .active > a,
 .pagination > .active > span {
   color: #666666;
-  border-bottom: .2em solid #4f8db3;
+  border-bottom: .2em solid var(--theme-color0);
 }
 .pagination > .disabled > a {
   border-color: #fff;
@@ -365,4 +371,10 @@ section.footer-copyright {
   color: #C9C9C9;
   background-color: #FFF;
   cursor: default;
+}
+.pagination > .active > a:hover,
+.pagination > .active > span:hover {
+  background-color: var(--theme-color0);
+  border-bottom: .2em solid var(--theme-color0);
+  color: #fff;
 }

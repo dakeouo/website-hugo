@@ -33,6 +33,14 @@ h4 {
 	line-height: 1.5em;
 }
 
+a {
+	color: var(--theme-color0);
+}
+
+a:hover {
+	color: var(--theme-color2);
+}
+
 a.navbar-brand img {
 	height: 1.5em; 
 	margin-top: -.2em;
@@ -297,6 +305,18 @@ section.footer-copyright {
 .about-cert h4 {
 	margin-top: 0;
 	line-height: 1em;
+}
+
+.post-time, a.post-category, a.post-tag, a.post-topic {
+	font-weight: 400;
+}
+
+.post-title {
+	color: inherit;
+}
+
+.post-title:hover {
+	color: var(--theme-color2);
 }
 
 /*--------------------------------------------------------------------------

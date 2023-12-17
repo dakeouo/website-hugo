@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+
+{{ partial "sidemenu.html" . }}
+
+{{ partial "banner.html" . }}
+
+<br />
+<section id="main" class="wrapper style1">
+	<div class="container">
+		<div class="row" style="margin-top: -2.5em;">
+			<div class="9u">
+	  			{{ range ( .Paginate (where .Site.RegularPages "Type" "post")).Pages }}
+	  			<section class="post-block">
+	    			{{ .Render "summary"}}
+				</section>
+	  			{{ end }}
+	  			{{ partial "pagination.html" . }}
+			</div>
+			<div class="3u">
+				{{ partial "main_right_nav.html" . }}
+				<br />
+	 		</div>
+		</div>
+	</div>
+</section>
+
+{{ partial "footer.html" . }}

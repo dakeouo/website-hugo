@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="footer-bs style2">
+<footer class="footer-bs">
     <div class="container">
     	<div class="row footer-social">
         	<div class="3u">
@@ -12,7 +12,7 @@
             	{{ partial "social.html" . }}
                 <p>{{ .Site.Author.description | safeHTML }}</p>
                 <ul class="actions">
-					<li><a href="{{ $.Site.BaseURL }}/about" class="button special">Learn More</a></li>
+					<li><a href="{{ $.Site.BaseURL }}/about" class="button" style="font-size:1em; font-weight: 500;">Learn More</a></li>
 				</ul>
             </div>
         </div>

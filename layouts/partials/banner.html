@@ -1,5 +1,6 @@
 <!-- Banner -->
 <section id="banner" style="background-image: url('{{ $.Site.BaseURL }}/images/{{ if .IsHome }}banner2.jpg{{else if eq .Section "post" }}banner3.jpg{{else if or (eq .Section "tags") (eq .Section "category") }}banner3.jpg{{else}}banner1.jpg{{end}}');">
+	<br /><br />
 	<div class="inner" style="margin: 0 auto;  width: 90%;">
 		{{ if .IsHome }}
 		<h2>{{ .Site.Params.Brand }}</h2>

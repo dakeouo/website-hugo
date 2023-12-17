@@ -1,0 +1,58 @@
+<head>
+	<title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
+  {{hugo.Generator}}
+
+	<meta name="keywords" content="" />
+  <link rel="icon" href="{{ $.Site.BaseURL }}images/favicon.ico" type="image/x-icon" />
+	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+
+  <base href="/">
+  <script src='{{ "js/jquery.min.js" | absURL  }}'></script>
+  <script src='{{ "js/skel.min.js" | absURL  }}'></script>
+  <!-- <script src='{{ "js/skel-layers.min.js" | absURL  }}'></script> -->
+  <script src='{{ "js/init.js" | absURL  }}'></script>
+  <script src='{{ "js/bootstrap.min.js" | absURL  }}'></script>
+  
+  <noscript>
+    <link href='{{ $.Site.BaseURL }}css/skel.css' rel="stylesheet" />
+    <link href='{{ $.Site.BaseURL }}css/style.css' rel="stylesheet" />
+    <link href='{{ $.Site.BaseURL }}css/style-xlarge.css' rel="stylesheet" />
+  </noscript>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="{{ $.Site.BaseURL }}css/bootstrap.css" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/cdb1f069da.js"></script>
+  
+
+	{{ with .Site.Params.highlightjs }}
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/{{ . }}.min.css">
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+  {{ range $.Site.Params.highlightjs_extra_languages }}
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/{{ . }}.min.js"></script>
+  {{ end }}
+  <script>hljs.initHighlightingOnLoad();</script>
+  {{ end }}
+
+  {{ partial "favicon.html" . }}
+
+  {{ range .Site.Params.custom_css }}
+    {{ if findRE "https?://" . }}
+        <link rel="stylesheet" href="{{ . }}">
+    {{ else }}
+        <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+    {{ end }}
+  {{ end }}
+  {{ range .Site.Params.custom_js }}
+    {{ if findRE "https?://" . }}
+        <script src="{{ . }}"></script>
+    {{ else }}
+        <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+    {{ end }}
+  {{ end }}
+
+</head>

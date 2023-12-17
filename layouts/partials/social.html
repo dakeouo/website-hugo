@@ -1,0 +1,118 @@
+<ul class="social-link">
+	{{ if .OutputFormats.Get "RSS" }}
+    <li><a href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' rel="me" target="_blank" class="icon fa-rss"><span class="label">RSS</span></a></li>
+    {{ end }}
+
+    <!-- SNS microblogging -->
+    {{ with .Site.Social.twitter }}
+    <li><a href="https://twitter.com/{{ . }}" rel="me" target="_blank" class="icon fa-twitter-square"><span class="label">Twitter</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.facebook }}
+    <li><a href="https://facebook.com/{{ . }}" rel="me" target="_blank" class="icon fa-facebook-square"><span class="label">Facebook</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.weibo }}
+    <li><a href="http://weibo.com/{{ . }}" rel="me" target="_blank" class="icon fa-weibo"><span class="label">Weibo</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.tumblr }}
+    <li><a href="https://{{ . }}.tumblr.com/" rel="me" target="_blank" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+    {{ end }}
+
+    <!-- SNS photo/video sharing -->
+    {{ with .Site.Social.instagram }}
+    <li><a href="https://instagram.com/{{ . }}" rel="me" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.flickr }}
+    <li><a href="https://flickr.com/photos/{{ . }}" rel="me" target="_blank" class="icon fa-flickr"><span class="label">Flickr</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.photo500px }}
+    <li><a href="https://500px.com/{{ . }}" rel="me" target="_blank" class="icon fa-500px"><span class="label">500px</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.pinterest }}
+    <li><a href="https://pinterest.com/{{ . }}" rel="me" target="_blank" class="icon fa-pinterest-square"><span class="label">Pinterest</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.youtube }}
+    <li><a href="https://youtube.com/user/{{ . }}" rel="me" target="_blank" class="icon fa-youtube-square"><span class="label">Youbube</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.vimeo }}
+    <li><a href="https://vimeo.com/{{ . }}" rel="me" target="_blank" class="icon fa-vimeo-square"><span class="label">Vimo</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.vine }}
+    <li><a href="https://vine.co/{{ . }}" rel="me" target="_blank" class="icon fa-vine"><span class="label">Vine</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.slideshare }}
+    <li><a href="http://slideshare.net/{{ . }}" rel="me" target="_blank" class="icon fa-slideshare"><span class="label">SlideShare</span></a></li>
+    {{ end }}
+
+    <!-- SNS career oriented -->
+	{{ with .Site.Social.linkedin }}
+	<li><a href="https://linkedin.com/in/{{ . }}" rel="me" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+	{{ end }}
+
+	{{ with .Site.Social.xing }}
+    <li><a href="https://xing.com/profile/{{ . }}" rel="me" target="_blank" class="icon fa-xing-square"><span class="label">Xing</span></a></li>
+    {{ end }}
+
+     <!-- SNS news -->
+    {{ with .Site.Social.reddit }}
+    <li><a href="https://reddit.com/user/{{ . }}" rel="me" target="_blank" class="icon fa-reddit-square"><span class="label">Reddit</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.hackernews }}
+    <li><a href="https://news.ycombinator.com/user?id={{ . }}" rel="me" target="_blank" class="icon fa-hacker-news"><span class="label">Hacker News</span></a></li>
+    {{ end }}
+
+    <!-- Techie -->
+    {{ with .Site.Social.github }}
+    <li><a href="https://github.com/{{ . }}" rel="me" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.gitlab }}
+    <li><a href="https://gitlab.com/{{ . }}" rel="me" target="_blank" class="icon fa-gitlab"><span class="label">GitLab</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.bitbucket }}
+    <li><a href="https://bitbucket.org/{{ . }}" rel="me" target="_blank" class="icon fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.stackoverflow }}
+    <li><a href="https://stackoverflow.com/users/{{ . }}" rel="me" target="_blank" class="icon fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.serverfault }}
+    <li><a href="https://serverfault.com/users/{{ . }}" rel="me" target="_blank" class="icon fa-server"><span class="label">Server Fault</span></a></li>
+    {{ end }}
+
+    <!-- Gaming -->
+    {{ with .Site.Social.steam }}
+    <li><a href="https://steamcommunity.com/id/{{ . }}" rel="me" target="_blank" class="icon fa-steam"><span class="label">Steam</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.mobygames }}
+    <li><a href="https://www.mobygames.com/developer/sheet/view/developerId,{{ . }}" rel="me" target="_blank" class="icon fa-gamepad"><span class="label">MobyGames</span></a></li>
+    {{ end }}
+
+    <!-- Music -->
+    {{ with .Site.Social.lastfm }}
+    <li><a href="http://last.fm/user/{{ . }}" rel="me" target="_blank" class="icon fa-lastfm-square"><span class="label">Last.fm</span></a></li>
+    {{ end }}
+
+    {{ with .Site.Social.discogs }}
+    <li><a href="https://www.discogs.com/user/{{ . }}" rel="me" target="_blank" class="icon fa-music"><span class="label">Discogs</span></a></li>
+    {{ end }}
+
+    <!-- Other -->
+    {{ with .Site.Social.keybase }}
+    <li><a href="https://keybase.io/{{ . }}" rel="me" target="_blank" class="icon fa-key"><span class="label">Keybase</span></a></li>
+    {{ end }}
+    
+</ul>

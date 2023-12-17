@@ -14,13 +14,13 @@
 	--btnsp-active-color:#69322A;
 }
 
-html {
+html, p, label, a {
 	-webkit-font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 	-moz-font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 	-ms-font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 	-o-font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 	font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
-	font-size: 1em;
+	font-size: 1.05em;
 }
 
 h3 {
@@ -209,7 +209,7 @@ section.footer-copyright {
 }
 
 .footer-bs .footer-social p, .about-describe p {
-	font-size: 1.1em;
+	font-size: 1.2em;
 	padding-bottom: .5em;
 }
 
@@ -221,7 +221,7 @@ section.footer-copyright {
 
 .social-link li, .info-link li {
 	color: inherit;
-	padding: .3em;
+	padding: .25em .5em;
 	background-color: #666;
 	display: inline-block;
 	font-size: 1.3em;
@@ -231,11 +231,11 @@ section.footer-copyright {
 }
 
 .social-link li a {
-	color: inherit;
+	color: #eee;
 }
 
-.social-link li a:hover {
-	color: #fff;
+.social-link li:hover {
+	background-color: var(--theme-color4);
 }
 
 .about-describe {
@@ -249,7 +249,7 @@ section.footer-copyright {
 }
 
 .about-describe .social-link li a, .info-link li a {
-	color: #ccc;
+	color: #eee;
 }
 
 .about-describe .social-link li a:hover, .info-link li a:hover {

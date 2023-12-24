@@ -1,9 +1,9 @@
 <h3><b class="icon fa-certificate">&nbsp;Certificates</b></h3>
-<section class="post-block">
+<section class="post-block post-cert">
 	<div class="row about-cert">
 		{{ range .Site.Author.block_certified }}
 		<div class="3u">
-			<img class="post-cert-img" src="{{ $.Site.BaseURL }}/certified/{{.certified_image}}" alt="Cert Image">
+			<img src="{{ $.Site.BaseURL }}/certified/{{.certified_image}}" alt="Cert Image">
 			<label>{{.certified_issuer}}</label>
 			<h4>{{.certified_name}}</h4>
 			<ul class="actions">

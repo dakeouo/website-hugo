@@ -13,8 +13,10 @@
 			{{end}}
 			<h2 id="posts">{{ .Title }}</h2>
 			{{ if eq .Section "post" }}
+			{{ if isset .Params "date" }}
 			{{ partial "post_meta_single.html" . }}
-			{{end}}
+			{{ end }}
+			{{ end }}
 		{{ end }}
 		{{ if not (eq .Section "about") }}
 		<p>{{ if .IsHome }}{{ .Site.Params.Subtitle }}{{ else }}{{ .Description }}{{ end }}</p>

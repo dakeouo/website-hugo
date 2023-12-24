@@ -11,6 +11,9 @@
 			<small style="font-size: 1.5em;">CATEGORY</small>
 			{{end}}
 			<h2 id="posts">{{ .Title }}</h2>
+			{{ if eq .Section "post" }}
+			{{ partial "post_meta_single.html" . }}
+			{{end}}
 		{{ end }}
 		<p>{{ if .IsHome }}{{ .Site.Params.Subtitle }}{{ else }}{{ .Description }}{{ end }}</p>
 	</div>

@@ -92,6 +92,15 @@ section.footer-copyright {
 	margin: 1em auto;
 }
 
+.single-meta, .single-meta a {
+	color: inherit;
+	font-size: 1.1em;
+}
+
+.single-meta a:hover {
+	color: #fff;
+}
+
 .about-box {
 	/*width: initial;*/
 	/*background-color: #ddd;*/

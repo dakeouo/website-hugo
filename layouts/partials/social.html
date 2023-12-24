@@ -1,6 +1,6 @@
 <ul class="social-link">
-	{{ if .OutputFormats.Get "RSS" }}
-    <li><a href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' rel="me" target="_blank" class="icon fa-rss"><span class="label">RSS</span></a></li>
+    {{ with .Site.Social.email }}
+    <li><a href="mailto:{{ . }}" rel="me" target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
     {{ end }}
 
     <!-- SNS microblogging -->

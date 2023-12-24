@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+
+{{ partial "sidemenu.html" . }}
+
+{{ partial "banner.html" . }}
+
+<section id="main" class="wrapper style1">
+	<div class="container">
+		<div class="about-describe">
+    		{{ with .Site.Author.title }}<label id="personal-title">{{ . }}</label>{{ end }}
+        	<h3>{{ .Site.Author.name | safeHTML }}</h3>
+        	{{ partial "social.html" . }}
+            <p>{{ .Site.Author.description | safeHTML }}</p>
+        </div>
+        <div class="about-info">
+        {{ partial "about_works.html" . }}
+
+        {{ partial "about_activities.html" . }}
+
+        {{ partial "about_certs.html" . }}
+    	</div>
+	</div>
+</section>
+
+<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+{{ partial "single_footer.html" . }}

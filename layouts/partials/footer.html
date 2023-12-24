@@ -1,0 +1,32 @@
+<!-- Footer -->
+<footer class="footer-bs">
+    <div class="container">
+    	<div class="row footer-social">
+        	<div class="3u">
+        		<a href="#"><img src="{{ $.Site.BaseURL }}/images/author.jpg"></a>
+        	</div>
+        	<div class="9u footer-nav">
+        		<br />
+        		{{ with .Site.Author.title }}<small id="personal-title">{{ . }}</label>{{ end }}
+            	<h3>{{ .Site.Author.name | safeHTML }}</h3>
+            	{{ partial "social.html" . }}
+                <p>{{ .Site.Author.description | safeHTML }}</p>
+                <ul class="actions">
+					<li><a href="{{ $.Site.BaseURL }}/about" class="button" style="font-size:1em; font-weight: 500;">Learn More</a></li>
+				</ul>
+            </div>
+        </div>
+        <ul class="footer-copyright">
+			<li>{{ .Site.Copyright | safeHTML }}</li>
+			<li>Build with&nbsp;<b><a href="https://gohugo.io/" target="_blank">Hugo</a></b></li>
+			<li>Theme&nbsp;<b><a href="http://templated.co">TEMPLATED</a></b></li>
+		</ul>
+    </div>
+</footer>
+<script>
+	$(document).ready(function() {
+		setTimeout(function(){$('#curve_chart').hide()},1000);
+	});
+</script>
+</body>
+</html>

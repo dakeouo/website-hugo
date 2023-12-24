@@ -1,0 +1,14 @@
+{{ $baseUrl := .Site.BaseURL }}
+<hr />
+<section>
+  {{ if isset .Params "tags" }}
+  {{ $count := len .Params.tags }}
+  {{ if gt $count 0 }}
+  <h3>Tags</h3>
+  {{ range $k, $v := .Params.tags }}
+  <a href="{{ $baseUrl }}tags/{{ . | urlize }}" class="badge nav-tags">{{ . }}</a>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+</section>
+<br />

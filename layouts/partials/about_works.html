@@ -1,39 +1,36 @@
-<div class="container">
+<h3><b class="icon fa-briefcase">&nbsp;Works</b></h3>
+{{ range .Site.Author.block_works }}
+<section class="post-block">
 	<div class="row">
-		<div class="12u" class="about-item-title">
-			<h2><b class="icon fa-briefcase">&nbsp;Works</b></h2>
+		<div class="col-xs-2">
+			<img src="{{ $.Site.BaseURL }}/images/{{.works_image}}" alt="Post Image">
 		</div>
-		{{ range .Site.Author.block_works }}
-		<div class="12u about-box">
-			<div class="row">
-				<div class="4u" align="center">
-					<img src="{{ $.Site.BaseURL }}/images/{{.works_image}}" style="width: 100%; max-width: 30em; max-height: 15em; margin: 0 auto;" alt="" />
-				</div>
-				<div class="8u" style="margin-top: .5em;">
-					<h3>&nbsp;<b class="icon fa-box-archive">&nbsp;{{.works_title}}</b></h3>
-					<ul class="icons">
-						{{ with .works_url }}
-					    <li><a href="{{ . }}" rel="me" target="_blank" class="icon fa-link"><span class="label">website</span></a></li>
-					    {{ end }}
+		<div class="col-xs-10">
+			<h4>{{ .works_title }}</h4>
+			<ul class="info-link">
+    			{{ with .works_url }}
+			    <li><a href="{{ . }}" rel="me" target="_blank" class="icon fa-link"><span class="label">website</span></a></li>
+			    {{ end }}
 
-						{{ with .works_github }}
-					    <li><a href="https://github.com/{{ . }}" rel="me" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-					    {{ end }}
+				{{ with .works_github }}
+			    <li><a href="https://github.com/{{ . }}" rel="me" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+			    {{ end }}
 
-					    {{ with .works_gitlab }}
-					    <li><a href="https://gitlab.com/{{ . }}" rel="me" target="_blank" class="icon fa-gitlab"><span class="label">GitLab</span></a></li>
-					    {{ end }}
+			    {{ with .works_gitlab }}
+			    <li><a href="https://gitlab.com/{{ . }}" rel="me" target="_blank" class="icon fa-gitlab"><span class="label">GitLab</span></a></li>
+			    {{ end }}
 
-					    {{ with .works_bitbucket }}
-					    <li><a href="https://bitbucket.org/{{ . }}" rel="me" target="_blank" class="icon fa-bitbucket"><span class="label">Bitbucket</span></a></li>
-					    {{ end }}
-					</ul>
-					<p>{{.works_description | safeHTML }}</p>
-				</div>
+			    {{ with .works_bitbucket }}
+			    <li><a href="https://bitbucket.org/{{ . }}" rel="me" target="_blank" class="icon fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+			    {{ end }}
+			</ul>
+			<p>{{ .works_description | safeHTML }}</p>
+			<div>
+				{{ range .works_tags }}
+				<span class="badge"># {{ . }}</span>
+				{{ end }}
 			</div>
-			<br />
 		</div>
-		{{end}}
 	</div>
-	<br />
-</div>
+</section>
+{{ end }}

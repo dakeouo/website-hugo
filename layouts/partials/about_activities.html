@@ -1,0 +1,8 @@
+<h3><b class="icon fa-bullseye">&nbsp;Activities</b></h3>
+{{ range .Site.Author.block_activities }}
+<section class="post-block">
+	<h4><i class="fa-solid fa-caret-right"></i>&nbsp;{{ .activities_title }}</h4>
+	<label>{{ .activities_during }}</label>
+	<p>{{ .activities_description }}</p>
+</section>
+{{ end }}

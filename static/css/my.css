@@ -65,21 +65,33 @@ section.wrapper {
 
 section.post-block {
 	padding-bottom: 1.2em;
+	font-size: 1.05em;
 }
 
 section.post-block h4 {
 	font-weight: 600;
+	font-size: 1.35em;
 }
 
 section.post-block p {
 	padding-bottom: .25em;
-	font-size: 1.05em;
 }
 
 section.post-block img {
 	margin-top: 1em;
 	aspect-ratio: 1 / 1; 
 	width: 100%; 
+	max-height: 10em; 
+	object-fit: contain; 
+	object-position: center; 
+	padding: .25em 0; 
+	border-radius: 1.5em;
+}
+
+.post-cert-img {
+	margin-top: 1em;
+	aspect-ratio: 1 / 1; 
+	height: 100%; 
 	max-height: 10em; 
 	object-fit: cover; 
 	object-position: center; 
@@ -247,11 +259,11 @@ section.footer-copyright {
 	border-radius: 1em;
 }
 
-.social-link li a {
+.social-link li a, .info-link li a {
 	color: #eee;
 }
 
-.social-link li:hover {
+.social-link li:hover, .info-link li:hover {
 	background-color: var(--theme-color4);
 }
 
@@ -292,6 +304,7 @@ section.footer-copyright {
 }
 
 .about-info h3 {
+	font-size: 1.5em;
 	margin-top: .5em;
 }
 
@@ -304,7 +317,7 @@ section.footer-copyright {
 }
 
 .about-info .info-link li{
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 .about-cert {

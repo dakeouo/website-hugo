@@ -4,6 +4,7 @@
 	<div class="inner" style="margin: 0 auto;  width: 90%;">
 		{{ if .IsHome }}
 		<h2>{{ .Site.Params.Brand }}</h2>
+		{{ else if eq .Section "about" }}
 		{{ else }}
 			{{ if eq .Section "tags" }}
 			<small style="font-size: 1.5em;">TAGS</small>
@@ -15,6 +16,13 @@
 			{{ partial "post_meta_single.html" . }}
 			{{end}}
 		{{ end }}
+		{{ if gt .Section "about" }}
 		<p>{{ if .IsHome }}{{ .Site.Params.Subtitle }}{{ else }}{{ .Description }}{{ end }}</p>
+		{{ end }}
 	</div>
 </section>
+{{ if eq .Section "about" }}
+<div id="about-image" >
+	<img src="{{ $.Site.BaseURL }}/images/author.jpg">
+</div>
+{{ end }}

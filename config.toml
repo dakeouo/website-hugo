@@ -5,7 +5,7 @@ defaultContentLanguage = "zh-tw"
 languageCode = "zh-tw"
 title = "Terahake"
 copyright = "&copy; L.J. Hong | Terahake. All rights reserved."
-paginate = 6
+paginate = 5
 
 # Change the default theme to be use when building the site with Hugo
 theme = "ion"

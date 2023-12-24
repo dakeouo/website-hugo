@@ -16,7 +16,7 @@
 			{{ partial "post_meta_single.html" . }}
 			{{end}}
 		{{ end }}
-		{{ if gt .Section "about" }}
+		{{ if not (eq .Section "about") }}
 		<p>{{ if .IsHome }}{{ .Site.Params.Subtitle }}{{ else }}{{ .Description }}{{ end }}</p>
 		{{ end }}
 	</div>

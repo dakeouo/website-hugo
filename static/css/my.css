@@ -65,7 +65,11 @@ section.wrapper {
 
 section.post-block {
 	padding-bottom: 1.2em;
+}
+
+section.post-block, section.post-block li {
 	font-size: 1.05em;
+	font-weight: 500;
 }
 
 section.post-block h4 {

@@ -59,27 +59,27 @@ theme = "ion"
   location = "Taichung, Taiwan"
   education = ["Master of Electronic Engineering, NCUT", "Bachelor of Computer Science, NCUT"]
 
-  [[author.block_skill]]
-    skill_title = "DevOps Deploy Tools"
-    skill_item = ["AWS", "GCP", "Azure DevOps", "Git", "Docker"]
+  [[author.block_activities]]
+    activities_title = "可靠性工程師 - 今網智慧科技"
+    activities_during = "2022.02 - "
+    activities_description = "<ul><li>規劃<u>程式從開發至部署</u>的規範流程，促進服務開發跌代速度。</li><li>確保<u>系統與站台的可靠性</u>，提升顧客服務體驗。</li></ul>"
 
-  [[author.block_skill]]
-    skill_title = "Programm Languages"
-    skill_item = ["Python", "PHP", "HTML", "MySQL/MariaDB", "C"]
+  [[author.block_activities]]
+    activities_title = "電子工程碩士 - 勤益科大"
+    activities_during = "2019.09 - 2021.09"
+    activities_description = "<ul><li>在學期間製作出<b>操作系統</b>與<b>數據管理</b>兩平台，分別進行<u>實驗操作紀錄與圖形化介面進行數據管理</u>功能。</li><li>進行<b>實驗數據資料彙整</b>，並使用<u>Keras開源神經網路庫</u>建立機器學習模型，並分類實驗數據結果。</li></ul>"
 
-  [[author.block_skill]]
-    skill_title = "Integrated Environment"
-    skill_item = ["Vim", "Sublime text", "Jupyter Notebook", "Colab"]
-
-  [[author.block_skill]]
-    skill_title = "Web Development Framework"
-    skill_item = ["Codeigniter", "Laravel", "Flask"]
+  [[author.block_activities]]
+    activities_title = "資訊工程學士 - 勤益科大"
+    activities_during = "2015.09 - 2019.06"
+    activities_description = "<ul><li>於在學期間加入<b>服務性社團</b>，有擔任過<b>國小寒假營隊小隊輔</b>的經驗，使我了解<u>營隊活動的運作與秘辛</u>。</li><li>參與過兩次<b>盛群盃MCU創意大賽</b>，以盛群半導體晶片改善現實生活中總總不便的問題。藉由該競賽<u>可以觀摩他校成品的優缺項目，進而精進自我作品的不足</u>。</li><li>畢業實務專題製作<b>空氣品質感測監控平台</b>，主要<b>負責硬體MCU程式撰寫</b>。透過MCU連接感測器收集數值，再透過WIFI模組將數值上傳至雲端，透過網頁即可查看及時數值。</li></ul>"
 
   [[author.block_works]]
     works_title = "數字華容道(Docker + Flask)"
     works_image = "Digital Klotski.png"
     works_github = "https://github.com/dakeouo/proj-klotski-app"
     works_url = "https://klotski-app.terahake.in/"
+    works_tags = ["Python", "Flask", "AWS ECS", "AWS Fargate", "GCP Cloud Run", "Git"]
     works_description = "Serverless練習專案。使用<a href='https://flask.palletsprojects.com/en/2.0.x/'>Flask</a>框架來建立一個簡單的網頁益智遊戲 - 數字華容道 (Digital Klotski)，並使用Dockerfile來建立Docker Image，最後使用兩個雲端平台(AWS/GCP)來部署專案：<br /><ul><li><b>AWS</b> (ECS + Fargate)：使用<a href='https://aws.amazon.com/tw/ecs/'>Amazon Elastic Container Service (ECS)</a>來建立叢集(cluster)以及<a href='https://aws.amazon.com/tw/fargate/'>AWS Fargate</a>環境的任務(Task)，來部署Flask網站。</li><li><b>GCP</b> (Cloud Build + Cloud Run)：使用<a href='https://cloud.google.com/cloud_build'>GCP Cloud Build</a>來建立GCP的Docker Image，再使用<a href='https://cloud.google.com/cloud_run'>GCP Cloud Run</a>來部署Flask網站。</li></ul>"
 
   [[author.block_works]]
@@ -87,6 +87,7 @@ theme = "ion"
     works_image = "self-website2.png"
     works_github = "https://github.com/dakeouo/website-with-hugo"
     works_url = "https://terahake.in/"
+    works_tags = ["hugo", "Github", "GA", "Git"]
     works_description = "第二代個人網站，使用<a href='https://gohugo.io/'>Hugo</a>框架架站，並使用<a href='https://www.netlify.com/'>Netlify</a>託管網站。網站內容以Markdown語法編輯撰寫而成，並將檔案放置在Github上進行版本控制，且有<a href='https://analytics.google.com'>Google Analytics</a>插件進行網頁流量監控。"
 
   [[author.block_works]]
@@ -94,6 +95,7 @@ theme = "ion"
     works_image = "teashop manage system.png"
     works_github = "https://github.com/dakeouo/NCUT_CloudProj"
     works_url = "https://ncut-cloud2019.terahake.in/"
+    works_tags = ["PHP", "MySQL", "Apache", "Git"]
     works_description = "大四下【雲端應用實務】課程期末分組專案，為一套簡易型的飲料店訂購管理平台，利用LAMP ( Linux / Apache / MySQL / PHP )架構所製作而成的網站，並使用CSS來美化網頁。此網站使用<a href='https://fontawesome.com/'>Font Awesome</a>以及<a href='https://www.chartjs.org/'>chart.js</a>來完善網站功能。該課程目的，為<b>最終可在<a href='https://cloud.google.com/gcp'>GCP</a>平台架設網站</b>。<br />網站包含前後端兩部分，顧客可以在前端網頁訂購飲料及訂單狀況；店家可以在後端網頁增修飲料店資訊及操控訂單狀況。而我主要負責<b> 網站架構的規劃</b>與<b>整體網站程式的撰寫</b>，並使用<b>Git進行版控</b>。"
 
   [[author.block_works]]
@@ -101,6 +103,7 @@ theme = "ion"
     works_image = "stdHW manage system.png"
     works_github = "https://github.com/dakeouo/NCUT_LaraProj"
     works_url = "https://ncut-lara2019.terahake.in/"
+    works_tags = ["PHP", "MySQL", "Apache", "Git", "Laravel"]
     works_description = "大三下【網站資訊系統開發實務】課程期末分組專案，為一套簡易型的師生作業管理平台。該網站以<a href='https://laravel.com/'>Laravel</a>框架所製作而成。該課程目的，<b>分組使用版本控制，協同合作專案</b>，最終完成一個<b>完整的Laravel網站</b>。<br />本系統有 <b>學生端</b> 與 <b>助教端</b> 兩端，且此網站包含了選擇題系統：<br /><ul><li>在學生端，學生可以進行作業繳交、填答選擇題，並且可以觀看作業成績與評語</li><li>在助教端，助教可以增修選擇題、觀看學生的繳交狀況，並且可以批改學生作業並寫下評語</li></ul>而我在這個專案當中，擔任 <b>使用者介面設計、網頁結構設計</b> 的角色，並完成 <b>助教端的程式設計</b> 。"
 
   [[author.block_certified]]

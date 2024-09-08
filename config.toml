@@ -3,8 +3,8 @@ baseURL = "https://terahake.in/"
 defaultContentLanguage = "zh-tw"
 # language code
 languageCode = "zh-tw"
-title = "Terahake"
-copyright = "&copy; L.J. Hong | Terahake. All rights reserved."
+title = "Dakeouo"
+copyright = "&copy; L.J. Hong | Dakeouo. All rights reserved."
 paginate = 5
 
 # Change the default theme to be use when building the site with Hugo
@@ -13,7 +13,7 @@ theme = "ion"
 [params]
   # Shown in the home page
   subtitle = "A novice engineer with constant learning experience"
-  brand = "Terahake"
+  brand = "Dakeouo"
   googleAnalytics = "G-0RETWSDKDV"
   disqus = "terahake"
   # CSS name for highlight.js

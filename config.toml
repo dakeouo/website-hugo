@@ -25,7 +25,7 @@ theme = "ion"
   # (relative to /static folder)
   custom_css = ["css/my.css"]
   custom_icon = ["img/favicon.ico"]
-  # custom_js = ["js/my.js"]
+  custom_js = ["js/my.js"]
 
 [taxonomies]
   about = 'about'

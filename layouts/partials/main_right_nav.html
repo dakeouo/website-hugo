@@ -1,4 +1,15 @@
 <section>
+  <div class="search-container">
+    <div class="has-search">
+      <span class="form-control-feedback">
+          <i class="fa-solid fa-magnifying-glass"></i>
+      </span>
+      <input type="text" class="form-control" id="searchInput" placeholder="Search">
+      <input type="hidden" id="baseUrl" value="{{ $.Site.BaseURL }}">
+  </div>
+</div>
+</section>
+<section>
   <h3>Categories</h3>
   {{ if .Site.Taxonomies.category }}
     <ul class="alt">

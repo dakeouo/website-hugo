@@ -404,3 +404,30 @@ section.footer-copyright {
   border-bottom: .2em solid var(--theme-color0);
   color: #fff;
 }
+
+/* Search input and icon styles */
+.has-search {
+	position: relative;
+}
+.has-search .form-control-feedback {
+	position: absolute;
+	z-index: 2;
+	display: block;
+	width: 2.375rem;
+	height: 2.375rem;
+	line-height: 2.375rem;
+	text-align: center;
+	pointer-events: none;
+	color: #aaa;
+}
+.has-search .form-control {
+	padding-left: 2.375rem;
+	width: 100%;
+	height: 2.375rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+/* Optimized icon styles */
+.fa-magnifying-glass {
+	font-size: 14px;
+}
